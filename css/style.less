@@ -1,0 +1,165 @@
+html {
+	font-family: sans-serif;
+	font-size: 10px;
+}
+.btn-mixin {
+	background-color: #fff;
+	border: 1px solid #302952;
+	padding: 1rem 3rem;
+	transition: all 0.3s;
+	text-transform: uppercase;
+	&:hover {
+		color: #fff;
+		background-color: #302952;
+	}
+}
+.header {
+	&-box {
+		position: fixed;
+		width: 100vw;
+		background-color: #302952;
+	}
+	&-logo {
+		width: 80px;
+		margin-bottom: 5px;
+	}
+	&-list {
+		margin-top: 2.3rem;
+	}
+	&-items {
+		display: inline;
+		margin-left: 30px;
+	}
+	&-items a {
+		color: #fff;
+		transition: all 0.3s;
+		padding-bottom: 1px;
+		border-bottom: 2px solid transparent;
+		&:hover {
+			color: #fff;
+			text-decoration: none;
+			border-bottom: 2px solid #fff;
+		}
+	}
+}
+.main {
+	height: 100vh;
+	background: url(../img/main-bg.jpg) no-repeat center;
+	background-size: cover;
+	color: #fff;
+	display: table;
+	width: 100%;
+	&-container {
+		display: table-cell;
+		vertical-align: middle;
+	}
+	&-row {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+	}
+	&-line {
+		height: 1px;
+		width: 200px;
+		background-color: #fff;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	&-content h1 {
+		text-transform: uppercase;
+	}
+}
+.about {
+	padding: 4rem 0px;
+	&-title {
+		text-align: center;
+		margin-bottom: 5rem;
+		text-transform: uppercase;
+	}
+	&-structure {
+		background-color: #302952;
+		color: #fff;
+		&_title {
+			text-align: center;
+		}
+	}
+	&-license {
+		&_text {
+			font-weight: 700;
+			margin-bottom: 2rem;
+		}
+		&_link {
+			.btn-mixin;
+			color: #302952;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	&-state {
+		margin-bottom: 4rem;
+		&_title {
+			padding: 10px 0px;
+		}
+		&_text {
+			text-align: justify;
+		}
+		&_btn {
+			&-open {
+				.btn-mixin;
+			}
+			&-close {
+				.btn-mixin;
+			}
+		}
+	}
+	&-documents {
+		background-color: #302952;
+		color: #fff;
+		&_title {
+			padding: 10px 0px;
+			&-modal {
+				color: #302952;
+			}
+		}
+		&_btn {
+			&-open {
+				.btn-mixin;
+				color: #fff;
+				background-color: #302952;
+				border: 1px solid #fff;
+				margin-bottom: 4rem;
+				&:hover {
+					background-color: #fff;
+					color: #302952;
+				}
+			}
+			&-close {
+				.btn-mixin;
+				background-color: #302952;
+				&:hover {
+					background-color: #fff;
+					color: #302952;
+				}
+			}
+		}
+		&_list {
+		}
+		&_body {
+			color: #000;
+			text-align: left;
+			h4 {
+				text-align: center;
+			}
+		}
+	}
+}
+a:active, a:focus { 
+	outline: none; 
+} 
+a::-moz-focus-inner { 
+	border: 0; 
+}
