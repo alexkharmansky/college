@@ -1,34 +1,62 @@
-html {
-	font-family: sans-serif;
-	font-size: 10px;
-}
+// ПЕРЕМЕННЫЕ
+
+@main-color: #FF7200;
+
+// ШРИФТЫ
+
+// МИКСИНЫ
 .btn-mixin {
 	background-color: #fff;
-	border: 1px solid #302952;
+	border: 1px solid @main-color;
 	padding: 1rem 3rem;
 	transition: all 0.3s;
 	text-transform: uppercase;
 	&:hover {
 		color: #fff;
-		background-color: #302952;
+		background-color: @main-color;
 	}
 }
+
+.shadow {
+	box-shadow: 1px 1px 10px #000;
+}
+
+// ГЛОБАЛЬНЫЕ НАСТРОЙКИ
+a:hover,
+a:focus,
+a:visited,
+a:active {
+	text-decoration: none;
+}
+
+html {
+	font-size: 10px;
+}
+
+body {
+	font-family: 'Roboto Slab', sans-serif;
+}
+
+// ШАПКА
 .header {
 	&-box {
+		z-index: 9;
 		position: fixed;
 		width: 100vw;
-		background-color: #302952;
+		background-color: @main-color;
+		box-shadow: 0 0 10px #000;
 	}
 	&-logo {
 		width: 80px;
 		margin-bottom: 5px;
 	}
 	&-list {
-		margin-top: 2.3rem;
+		margin-top: 1rem;
 	}
 	&-items {
 		display: inline;
-		margin-left: 30px;
+		margin-left: 12px;
+		margin-right: 12px;
 	}
 	&-items a {
 		color: #fff;
@@ -42,9 +70,11 @@ html {
 		}
 	}
 }
+
+// ГЛАВНАЯ
 .main {
 	height: 100vh;
-	background: url(../img/main-bg.jpg) no-repeat center;
+	background: no-repeat center;
 	background-size: cover;
 	color: #fff;
 	display: table;
@@ -72,28 +102,34 @@ html {
 		text-transform: uppercase;
 	}
 }
+
+// О КОЛЛЕДЖЕ
 .about {
-	padding: 4rem 0px;
+	box-shadow: 1px 1px 10px #000;
+	padding: 2rem 0px;
 	&-title {
+		margin-top: -1rem;
 		text-align: center;
-		margin-bottom: 5rem;
+		margin-bottom: 3rem;
 		text-transform: uppercase;
 	}
 	&-structure {
-		background-color: #302952;
+		margin-top: -1rem;
+		box-shadow: 1px 1px 10px #000;
+		background-color: @main-color;
 		color: #fff;
 		&_title {
 			text-align: center;
 		}
 	}
-	&-license {
+	&-license {	
 		&_text {
 			font-weight: 700;
 			margin-bottom: 2rem;
 		}
 		&_link {
 			.btn-mixin;
-			color: #302952;
+			color: @main-color;
 			&:hover {
 				text-decoration: none;
 			}
@@ -109,6 +145,7 @@ html {
 		}
 		&_btn {
 			&-open {
+				color: @main-color;
 				.btn-mixin;
 			}
 			&-close {
@@ -117,36 +154,35 @@ html {
 		}
 	}
 	&-documents {
-		background-color: #302952;
+		box-shadow: 1px 1px 10px #000;
+		background-color: @main-color;
 		color: #fff;
 		&_title {
 			padding: 10px 0px;
 			&-modal {
-				color: #302952;
+				color: @main-color;
 			}
 		}
 		&_btn {
 			&-open {
 				.btn-mixin;
 				color: #fff;
-				background-color: #302952;
+				background-color: @main-color;
 				border: 1px solid #fff;
 				margin-bottom: 4rem;
 				&:hover {
 					background-color: #fff;
-					color: #302952;
+					color: @main-color;
 				}
 			}
 			&-close {
 				.btn-mixin;
-				background-color: #302952;
+				background-color: @main-color;
 				&:hover {
 					background-color: #fff;
-					color: #302952;
+					color: @main-color;
 				}
 			}
-		}
-		&_list {
 		}
 		&_body {
 			color: #000;
@@ -155,8 +191,207 @@ html {
 				text-align: center;
 			}
 		}
+		&_list {
+			&-1 a,
+			&-2 a {
+				color: #000;
+				border-bottom: 2px solid transparent;
+				transition: all 0.3s;
+				&:hover {
+					border-bottom: 2px solid #000;
+				}
+			}
+		}
 	}
 }
+
+// РУКОВОДСТВО
+.leadership {
+	box-shadow: 1px 1px 10px #000;
+	color: #fff;
+	&-box {
+		background-color: @main-color;
+	}
+	&-title {
+		margin-top: 10px;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+}
+
+// ПРЕПОДАВАТЕЛИ (И РУКОВОДСТВО)
+.teachers {
+	&-box {
+		transition: all 0.3s;
+		&:hover {
+			box-shadow: 1px 1px 10px #000;
+			background-color: #fff;
+			color: @main-color;
+		}
+		&_2 {
+			transition: all 0.2s;
+			&:hover {
+				box-shadow: 1px 1px 10px #000;
+				background-color: @main-color;
+				color: #fff;
+			}
+		}
+	}
+	&-img {
+		margin-top: 1rem;
+		padding: 0 5px;
+		min-height: 300px;
+		min-width: 250px;
+	}
+	&-title {
+		text-align: center;
+	}
+	&-btn {
+		&_close {
+			.btn-mixin;
+			color: @main-color;
+		}
+	}
+	&-slider {
+		max-width: 100vw;
+		margin: 20px auto;
+		padding-bottom: 20px;
+		&_img {
+			text-align: center;
+			width: 100%;
+			// max-width: 250px;
+			// min-width: 250px;
+			// min-height: 300px;
+			// max-height: 300px;
+		}
+		&_slide {
+			width: 250px;
+			height: 300px;
+			margin-left: 15px;
+			margin-right: 15px;
+		}
+		&_text {
+			bottom: 0;
+			width: 100%;
+			color: @main-color;
+			text-align: center;
+		}
+		&-title,
+		&-desc {
+			margin: 0;
+			padding: 0 10px;
+		}
+	}
+}
+
+// ДЕЯТЕЛЬНОСТЬ 
+.activities {
+	background-color: @main-color;
+	color: #fff;
+	.shadow;
+	&-title {
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&-main {
+		text-align: center;
+		&_box {
+			background-color: #fff;
+			color: @main-color;
+			.shadow;
+		}
+	}
+	&-shedule {
+		text-align: center;
+	}
+	&-links {
+		color: #fff;
+		border-bottom: 2px solid transparent;
+		transition: all 0.3s;
+		&:hover {
+			text-decoration: none;
+			color: #fff;
+			border-bottom: 2px solid #fff;
+		}
+	}
+	&-programs {
+		text-align: center;
+	}
+	&-reports {
+		text-align: center;
+		&_box {
+			background-color: #fff;
+			.shadow;
+			color: @main-color;
+			a {
+				color: @main-color;
+				border-bottom: 2px solid transparent;
+				&:hover {
+					color: @main-color;
+					text-decoration: none;
+					border-bottom: 2px solid @main-color;
+				}
+			}
+		}
+	}
+	&-standarts {
+		text-align: center;
+		&_box {
+			background-color: #fff;
+			.shadow;
+			color: @main-color;
+			a {
+				color: @main-color;
+				border-bottom: 2px solid transparent;
+				&:hover {
+					color: @main-color;
+					text-decoration: none;
+					border-bottom: 2px solid @main-color;
+				}
+			}
+		}
+	}
+	&-scroll {
+		text-align: center;
+	}
+}
+
+// АБИТУРИЕНТАМ
+.enrollee {
+	&-title {
+		text-align: center;
+	}
+}
+
+// МОДАЛКИ
+
+.modal {
+	&_img {
+		float: left;
+		margin-right: 1rem;
+	}
+	&-header {
+		border: none;
+	}
+	&-footer {
+		border: none;
+	}
+	&-title {
+		text-align: center;
+	}
+	&-content {
+		border-radius: 0;
+	}
+}
+
+.close {
+	border: none;
+	font-size: 2.5rem;
+	position: absolute;
+	right: 2rem;
+	top: 2.3rem;
+}
+
 a:active, a:focus { 
 	outline: none; 
 } 

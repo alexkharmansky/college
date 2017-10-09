@@ -1,33 +1,47 @@
-html {
-  font-family: sans-serif;
-  font-size: 10px;
-}
 .btn-mixin {
   background-color: #fff;
-  border: 1px solid #302952;
+  border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
 }
 .btn-mixin:hover {
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
+}
+.shadow {
+  box-shadow: 1px 1px 10px #000;
+}
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  font-family: 'Roboto Slab', sans-serif;
 }
 .header-box {
+  z-index: 9;
   position: fixed;
   width: 100vw;
-  background-color: #302952;
+  background-color: #ff7200;
+  box-shadow: 0 0 10px #000;
 }
 .header-logo {
   width: 80px;
   margin-bottom: 5px;
 }
 .header-list {
-  margin-top: 2.3rem;
+  margin-top: 1rem;
 }
 .header-items {
   display: inline;
-  margin-left: 30px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 .header-items a {
   color: #fff;
@@ -42,7 +56,7 @@ html {
 }
 .main {
   height: 100vh;
-  background: url(../img/main-bg.jpg) no-repeat center;
+  background: no-repeat center;
   background-size: cover;
   color: #fff;
   display: table;
@@ -71,15 +85,19 @@ html {
   text-transform: uppercase;
 }
 .about {
-  padding: 4rem 0px;
+  box-shadow: 1px 1px 10px #000;
+  padding: 2rem 0px;
 }
 .about-title {
+  margin-top: -1rem;
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
 }
 .about-structure {
-  background-color: #302952;
+  margin-top: -1rem;
+  box-shadow: 1px 1px 10px #000;
+  background-color: #ff7200;
   color: #fff;
 }
 .about-structure_title {
@@ -91,15 +109,15 @@ html {
 }
 .about-license_link {
   background-color: #fff;
-  border: 1px solid #302952;
+  border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
-  color: #302952;
+  color: #ff7200;
 }
 .about-license_link:hover {
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
 }
 .about-license_link:hover {
   text-decoration: none;
@@ -114,71 +132,73 @@ html {
   text-align: justify;
 }
 .about-state_btn-open {
+  color: #ff7200;
   background-color: #fff;
-  border: 1px solid #302952;
+  border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
 }
 .about-state_btn-open:hover {
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
 }
 .about-state_btn-close {
   background-color: #fff;
-  border: 1px solid #302952;
+  border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
 }
 .about-state_btn-close:hover {
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
 }
 .about-documents {
-  background-color: #302952;
+  box-shadow: 1px 1px 10px #000;
+  background-color: #ff7200;
   color: #fff;
 }
 .about-documents_title {
   padding: 10px 0px;
 }
 .about-documents_title-modal {
-  color: #302952;
+  color: #ff7200;
 }
 .about-documents_btn-open {
   background-color: #fff;
-  border: 1px solid #302952;
+  border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
   border: 1px solid #fff;
   margin-bottom: 4rem;
 }
 .about-documents_btn-open:hover {
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
 }
 .about-documents_btn-open:hover {
   background-color: #fff;
-  color: #302952;
+  color: #ff7200;
 }
 .about-documents_btn-close {
   background-color: #fff;
-  border: 1px solid #302952;
+  border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
-  background-color: #302952;
+  background-color: #ff7200;
 }
 .about-documents_btn-close:hover {
   color: #fff;
-  background-color: #302952;
+  background-color: #ff7200;
 }
 .about-documents_btn-close:hover {
   background-color: #fff;
-  color: #302952;
+  color: #ff7200;
 }
 .about-documents_body {
   color: #000;
@@ -186,6 +206,187 @@ html {
 }
 .about-documents_body h4 {
   text-align: center;
+}
+.about-documents_list-1 a,
+.about-documents_list-2 a {
+  color: #000;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.about-documents_list-1 a:hover,
+.about-documents_list-2 a:hover {
+  border-bottom: 2px solid #000;
+}
+.leadership {
+  box-shadow: 1px 1px 10px #000;
+  color: #fff;
+}
+.leadership-box {
+  background-color: #ff7200;
+}
+.leadership-title {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.teachers-box {
+  transition: all 0.3s;
+}
+.teachers-box:hover {
+  box-shadow: 1px 1px 10px #000;
+  background-color: #fff;
+  color: #ff7200;
+}
+.teachers-box_2 {
+  transition: all 0.2s;
+}
+.teachers-box_2:hover {
+  box-shadow: 1px 1px 10px #000;
+  background-color: #ff7200;
+  color: #fff;
+}
+.teachers-img {
+  margin-top: 1rem;
+  padding: 0 5px;
+  min-height: 300px;
+  min-width: 250px;
+}
+.teachers-title {
+  text-align: center;
+}
+.teachers-btn_close {
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #ff7200;
+}
+.teachers-btn_close:hover {
+  color: #fff;
+  background-color: #ff7200;
+}
+.teachers-slider {
+  max-width: 100vw;
+  margin: 20px auto;
+  padding-bottom: 20px;
+}
+.teachers-slider_img {
+  text-align: center;
+  width: 100%;
+}
+.teachers-slider_slide {
+  width: 250px;
+  height: 300px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.teachers-slider_text {
+  bottom: 0;
+  width: 100%;
+  color: #ff7200;
+  text-align: center;
+}
+.teachers-slider-title,
+.teachers-slider-desc {
+  margin: 0;
+  padding: 0 10px;
+}
+.activities {
+  background-color: #ff7200;
+  color: #fff;
+  box-shadow: 1px 1px 10px #000;
+}
+.activities-title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.activities-main {
+  text-align: center;
+}
+.activities-main_box {
+  background-color: #fff;
+  color: #ff7200;
+  box-shadow: 1px 1px 10px #000;
+}
+.activities-shedule {
+  text-align: center;
+}
+.activities-links {
+  color: #fff;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s;
+}
+.activities-links:hover {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
+.activities-programs {
+  text-align: center;
+}
+.activities-reports {
+  text-align: center;
+}
+.activities-reports_box {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #000;
+  color: #ff7200;
+}
+.activities-reports_box a {
+  color: #ff7200;
+  border-bottom: 2px solid transparent;
+}
+.activities-reports_box a:hover {
+  color: #ff7200;
+  text-decoration: none;
+  border-bottom: 2px solid #ff7200;
+}
+.activities-standarts {
+  text-align: center;
+}
+.activities-standarts_box {
+  background-color: #fff;
+  box-shadow: 1px 1px 10px #000;
+  color: #ff7200;
+}
+.activities-standarts_box a {
+  color: #ff7200;
+  border-bottom: 2px solid transparent;
+}
+.activities-standarts_box a:hover {
+  color: #ff7200;
+  text-decoration: none;
+  border-bottom: 2px solid #ff7200;
+}
+.activities-scroll {
+  text-align: center;
+}
+.enrollee-title {
+  text-align: center;
+}
+.modal_img {
+  float: left;
+  margin-right: 1rem;
+}
+.modal-header {
+  border: none;
+}
+.modal-footer {
+  border: none;
+}
+.modal-title {
+  text-align: center;
+}
+.modal-content {
+  border-radius: 0;
+}
+.close {
+  border: none;
+  font-size: 2.5rem;
+  position: absolute;
+  right: 2rem;
+  top: 2.3rem;
 }
 a:active,
 a:focus {
