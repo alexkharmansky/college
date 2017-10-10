@@ -75,7 +75,7 @@ body {
 }
 .main-line {
   height: 1px;
-  width: 200px;
+  width: 500px;
   background-color: #fff;
   text-align: center;
   margin-left: auto;
@@ -209,13 +209,14 @@ body {
 }
 .about-documents_list-1 a,
 .about-documents_list-2 a {
-  color: #000;
+  color: #0000ff;
   border-bottom: 2px solid transparent;
   transition: all 0.3s;
 }
 .about-documents_list-1 a:hover,
 .about-documents_list-2 a:hover {
-  border-bottom: 2px solid #000;
+  color: #ff7200;
+  text-decoration: underline;
 }
 .leadership {
   box-shadow: 1px 1px 10px #000;
@@ -230,20 +231,13 @@ body {
   margin-bottom: 1rem;
 }
 .teachers-box {
+  cursor: pointer;
   transition: all 0.3s;
 }
 .teachers-box:hover {
   box-shadow: 1px 1px 10px #000;
   background-color: #fff;
   color: #ff7200;
-}
-.teachers-box_2 {
-  transition: all 0.2s;
-}
-.teachers-box_2:hover {
-  box-shadow: 1px 1px 10px #000;
-  background-color: #ff7200;
-  color: #fff;
 }
 .teachers-img {
   margin-top: 1rem;
@@ -304,23 +298,21 @@ body {
 .activities-main {
   text-align: center;
 }
-.activities-main_box {
-  background-color: #fff;
-  color: #ff7200;
-  box-shadow: 1px 1px 10px #000;
-}
 .activities-shedule {
   text-align: center;
 }
+.activities-shedule_box {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 1px 1px 10px #000;
+}
 .activities-links {
-  color: #fff;
-  border-bottom: 2px solid transparent;
+  color: #0000ff;
   transition: all 0.3s;
 }
 .activities-links:hover {
-  text-decoration: none;
-  color: #fff;
-  border-bottom: 2px solid #fff;
+  color: #ff7200;
+  text-decoration: underline;
 }
 .activities-programs {
   text-align: center;
@@ -331,16 +323,14 @@ body {
 .activities-reports_box {
   background-color: #fff;
   box-shadow: 1px 1px 10px #000;
-  color: #ff7200;
+  color: #000;
 }
 .activities-reports_box a {
-  color: #ff7200;
-  border-bottom: 2px solid transparent;
+  color: #0000ff;
 }
 .activities-reports_box a:hover {
   color: #ff7200;
-  text-decoration: none;
-  border-bottom: 2px solid #ff7200;
+  text-decoration: underline;
 }
 .activities-standarts {
   text-align: center;
@@ -348,22 +338,65 @@ body {
 .activities-standarts_box {
   background-color: #fff;
   box-shadow: 1px 1px 10px #000;
-  color: #ff7200;
+  color: #000;
 }
 .activities-standarts_box a {
-  color: #ff7200;
-  border-bottom: 2px solid transparent;
+  color: #0000ff;
 }
 .activities-standarts_box a:hover {
   color: #ff7200;
-  text-decoration: none;
-  border-bottom: 2px solid #ff7200;
+  text-decoration: underline;
 }
 .activities-scroll {
   text-align: center;
 }
 .enrollee-title {
   text-align: center;
+}
+.enrollee-order_box {
+  background-color: #ff7200;
+  color: #fff;
+  box-shadow: 1px 1px 10px #000;
+}
+.enrollee-order_text {
+  text-align: justify;
+}
+.enrollee-order_text__1 {
+  text-align: center;
+  font-weight: 700;
+}
+.enrollee-order_text__2 {
+  text-align: right;
+  font-style: italic;
+}
+.enrollee-order_btn {
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff7200;
+  border: 1px solid #fff;
+}
+.enrollee-order_btn:hover {
+  color: #fff;
+  background-color: #ff7200;
+}
+.enrollee-order_btn:hover {
+  background-color: #fff;
+  color: #ff7200;
+}
+.enrollee-rules {
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+}
+.enrollee-rules:hover {
+  color: #fff;
+  background-color: #ff7200;
 }
 .modal_img {
   float: left;

@@ -1,6 +1,7 @@
 // ПЕРЕМЕННЫЕ
 
 @main-color: #FF7200;
+@link-color: #0000FF;
 
 // ШРИФТЫ
 
@@ -92,7 +93,7 @@ body {
 	}
 	&-line {
 		height: 1px;
-		width: 200px;
+		width: 500px;
 		background-color: #fff;
 		text-align: center;
 		margin-left: auto;
@@ -194,11 +195,12 @@ body {
 		&_list {
 			&-1 a,
 			&-2 a {
-				color: #000;
+				color: @link-color;
 				border-bottom: 2px solid transparent;
 				transition: all 0.3s;
 				&:hover {
-					border-bottom: 2px solid #000;
+					color: @main-color;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -222,19 +224,12 @@ body {
 // ПРЕПОДАВАТЕЛИ (И РУКОВОДСТВО)
 .teachers {
 	&-box {
+		cursor: pointer;
 		transition: all 0.3s;
 		&:hover {
 			box-shadow: 1px 1px 10px #000;
 			background-color: #fff;
 			color: @main-color;
-		}
-		&_2 {
-			transition: all 0.2s;
-			&:hover {
-				box-shadow: 1px 1px 10px #000;
-				background-color: @main-color;
-				color: #fff;
-			}
 		}
 	}
 	&-img {
@@ -282,6 +277,10 @@ body {
 			padding: 0 10px;
 		}
 	}
+	&-position {
+		&:hover {
+		}
+	}
 }
 
 // ДЕЯТЕЛЬНОСТЬ 
@@ -295,23 +294,21 @@ body {
 	}
 	&-main {
 		text-align: center;
-		&_box {
-			background-color: #fff;
-			color: @main-color;
-			.shadow;
-		}
 	}
 	&-shedule {
 		text-align: center;
+		&_box {
+			background-color: #fff;
+			color: #000;
+			.shadow;
+		}
 	}
 	&-links {
-		color: #fff;
-		border-bottom: 2px solid transparent;
+		color: @link-color;
 		transition: all 0.3s;
 		&:hover {
-			text-decoration: none;
-			color: #fff;
-			border-bottom: 2px solid #fff;
+			color: @main-color;
+			text-decoration: underline;
 		}
 	}
 	&-programs {
@@ -322,14 +319,12 @@ body {
 		&_box {
 			background-color: #fff;
 			.shadow;
-			color: @main-color;
+			color: #000;
 			a {
-				color: @main-color;
-				border-bottom: 2px solid transparent;
+				color: @link-color;
 				&:hover {
 					color: @main-color;
-					text-decoration: none;
-					border-bottom: 2px solid @main-color;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -339,14 +334,12 @@ body {
 		&_box {
 			background-color: #fff;
 			.shadow;
-			color: @main-color;
+			color: #000;
 			a {
-				color: @main-color;
-				border-bottom: 2px solid transparent;
+				color: @link-color;
 				&:hover {
 					color: @main-color;
-					text-decoration: none;
-					border-bottom: 2px solid @main-color;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -360,6 +353,37 @@ body {
 .enrollee {
 	&-title {
 		text-align: center;
+	}
+	&-order {
+		&_box {
+			background-color: @main-color;
+			color: #fff;
+			.shadow;
+		}
+		&_text {
+			text-align: justify;
+			&__1 {
+				text-align: center;
+				font-weight: 700;
+			}
+			&__2 {
+				text-align: right;
+				font-style: italic;
+			}
+		}
+		&_btn {
+			.btn-mixin;
+			color: #fff;
+			background-color: @main-color;
+			border: 1px solid #fff;
+			&:hover {
+				background-color: #fff;
+				color: @main-color;
+			}
+		}
+	}
+	&-rules {
+		.btn-mixin;
 	}
 }
 
