@@ -139,10 +139,8 @@ body {
 	&-state {
 		margin-bottom: 4rem;
 		&_title {
+			text-align: center;
 			padding: 10px 0px;
-		}
-		&_text {
-			text-align: justify;
 		}
 		&_btn {
 			&-open {
@@ -151,6 +149,7 @@ body {
 			}
 			&-close {
 				.btn-mixin;
+				color: @main-color;
 			}
 		}
 	}
@@ -353,6 +352,8 @@ body {
 .enrollee {
 	&-title {
 		text-align: center;
+		text-transform: uppercase;
+		margin-bottom: 2rem;
 	}
 	&-order {
 		&_box {
@@ -370,9 +371,18 @@ body {
 				text-align: right;
 				font-style: italic;
 			}
+			&__3 {
+				text-align: left;
+			}
+			&__4 {
+				text-align: right;
+				margin-top: -4rem;
+			}
 		}
 		&_btn {
 			.btn-mixin;
+			margin-top: 1rem;
+			margin-bottom: 2rem;
 			color: #fff;
 			background-color: @main-color;
 			border: 1px solid #fff;
@@ -383,7 +393,79 @@ body {
 		}
 	}
 	&-rules {
-		.btn-mixin;
+		&_btn {
+			margin-top: 1rem;
+			.btn-mixin;
+			color: @main-color;
+		}
+	}
+	&-invalid {
+		&_box {
+			background-color: @main-color;
+			color: #fff;
+			.shadow;
+		}
+		&_btn {
+			.btn-mixin;
+			color: #fff;
+			background-color: @main-color;
+			border: 1px solid #fff;
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			&:hover {
+				background-color: #fff;
+				color: @main-color;
+			}
+			&__close {
+				.btn-mixin;
+				color: @main-color;
+			}
+		}
+	}
+	&-specialties {
+		&_title {
+			text-align: center;
+			margin-top: 3rem;
+			margin-bottom: 2rem;
+		}
+	}
+	&-cost {
+		text-align: center;
+		&_1 {
+			margin-top: 3.5rem;
+			margin-bottom: 2rem;
+		}
+		&_btn {
+			display: block;
+			text-align: center;
+			.btn-mixin;
+			color: @main-color;
+			margin-left: 28%;
+			margin-right: 28%;
+		}
+	}
+	&-list {
+		text-align: center;
+		&_box {
+			background-color: @main-color;
+			.shadow;
+			color: #fff;
+		}
+		&_btn {
+			.btn-mixin;
+			display: block;
+			text-align: center;
+			margin-left: 28%;
+			margin-right: 28%;
+			color: #fff;
+			background-color: @main-color;
+			border: 1px solid #fff;
+			margin-bottom: 1rem;
+			&:hover {
+				background-color: #fff;
+				color: @main-color;
+			}
+		}
 	}
 }
 

@@ -126,10 +126,8 @@ body {
   margin-bottom: 4rem;
 }
 .about-state_title {
+  text-align: center;
   padding: 10px 0px;
-}
-.about-state_text {
-  text-align: justify;
 }
 .about-state_btn-open {
   color: #ff7200;
@@ -149,6 +147,7 @@ body {
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
+  color: #ff7200;
 }
 .about-state_btn-close:hover {
   color: #fff;
@@ -352,6 +351,8 @@ body {
 }
 .enrollee-title {
   text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
 }
 .enrollee-order_box {
   background-color: #ff7200;
@@ -369,12 +370,21 @@ body {
   text-align: right;
   font-style: italic;
 }
+.enrollee-order_text__3 {
+  text-align: left;
+}
+.enrollee-order_text__4 {
+  text-align: right;
+  margin-top: -4rem;
+}
 .enrollee-order_btn {
   background-color: #fff;
   border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
   color: #fff;
   background-color: #ff7200;
   border: 1px solid #fff;
@@ -387,16 +397,114 @@ body {
   background-color: #fff;
   color: #ff7200;
 }
-.enrollee-rules {
+.enrollee-rules_btn {
+  margin-top: 1rem;
   background-color: #fff;
   border: 1px solid #ff7200;
   padding: 1rem 3rem;
   transition: all 0.3s;
   text-transform: uppercase;
+  color: #ff7200;
 }
-.enrollee-rules:hover {
+.enrollee-rules_btn:hover {
   color: #fff;
   background-color: #ff7200;
+}
+.enrollee-invalid_box {
+  background-color: #ff7200;
+  color: #fff;
+  box-shadow: 1px 1px 10px #000;
+}
+.enrollee-invalid_btn {
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #ff7200;
+  border: 1px solid #fff;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.enrollee-invalid_btn:hover {
+  color: #fff;
+  background-color: #ff7200;
+}
+.enrollee-invalid_btn:hover {
+  background-color: #fff;
+  color: #ff7200;
+}
+.enrollee-invalid_btn__close {
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #ff7200;
+}
+.enrollee-invalid_btn__close:hover {
+  color: #fff;
+  background-color: #ff7200;
+}
+.enrollee-specialties_title {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+.enrollee-cost {
+  text-align: center;
+}
+.enrollee-cost_1 {
+  margin-top: 3.5rem;
+  margin-bottom: 2rem;
+}
+.enrollee-cost_btn {
+  display: block;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  color: #ff7200;
+  margin-left: 28%;
+  margin-right: 28%;
+}
+.enrollee-cost_btn:hover {
+  color: #fff;
+  background-color: #ff7200;
+}
+.enrollee-list {
+  text-align: center;
+}
+.enrollee-list_box {
+  background-color: #ff7200;
+  box-shadow: 1px 1px 10px #000;
+  color: #fff;
+}
+.enrollee-list_btn {
+  background-color: #fff;
+  border: 1px solid #ff7200;
+  padding: 1rem 3rem;
+  transition: all 0.3s;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  margin-left: 28%;
+  margin-right: 28%;
+  color: #fff;
+  background-color: #ff7200;
+  border: 1px solid #fff;
+  margin-bottom: 1rem;
+}
+.enrollee-list_btn:hover {
+  color: #fff;
+  background-color: #ff7200;
+}
+.enrollee-list_btn:hover {
+  background-color: #fff;
+  color: #ff7200;
 }
 .modal_img {
   float: left;
