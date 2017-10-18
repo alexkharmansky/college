@@ -1,7 +1,11 @@
 // ПЕРЕМЕННЫЕ
 
-@main-color: #FF7200;
+@main-color: #fff;
 @link-color: #0000FF;
+@font-color: #5e5e5e;
+@hover-color: #ff0000;
+@bgcolor: #f3f3f3;
+@title-color: #111111;
 
 // ШРИФТЫ
 
@@ -12,14 +16,15 @@
 	padding: 1rem 3rem;
 	transition: all 0.3s;
 	text-transform: uppercase;
+	.shadow;
 	&:hover {
-		color: #fff;
+		color: @hover-color;
 		background-color: @main-color;
 	}
 }
 
 .shadow {
-	box-shadow: 1px 1px 10px #000;
+	box-shadow: 0 3px 5px 0 rgba(0,1,1,.1);
 }
 
 // ГЛОБАЛЬНЫЕ НАСТРОЙКИ
@@ -35,7 +40,8 @@ html {
 }
 
 body {
-	font-family: 'Roboto Slab', sans-serif;
+	font-family: 'Merriweather', sans-serif;
+	background-color: @bgcolor;
 }
 
 // ШАПКА
@@ -45,11 +51,8 @@ body {
 		position: fixed;
 		width: 100vw;
 		background-color: @main-color;
-		box-shadow: 0 0 10px #000;
-	}
-	&-logo {
-		width: 80px;
-		margin-bottom: 5px;
+		.shadow;
+		padding-right: 5.8rem;
 	}
 	&-list {
 		margin-top: 1rem;
@@ -60,14 +63,14 @@ body {
 		margin-right: 12px;
 	}
 	&-items a {
-		color: #fff;
+		color: @title-color;
 		transition: all 0.3s;
 		padding-bottom: 1px;
 		border-bottom: 2px solid transparent;
 		&:hover {
-			color: #fff;
+			color: @hover-color;
 			text-decoration: none;
-			border-bottom: 2px solid #fff;
+			border-bottom: 2px solid @hover-color;
 		}
 	}
 }
@@ -80,7 +83,7 @@ body {
 	color: #fff;
 	display: table;
 	width: 100%;
-	&-container {
+	 &-container {
 		display: table-cell;
 		vertical-align: middle;
 	}
@@ -90,7 +93,7 @@ body {
 		width: 100%;
 		text-align: center;
 		color: #fff;
-	}
+	} 
 	&-line {
 		height: 1px;
 		width: 500px;
@@ -102,35 +105,41 @@ body {
 	&-content h1 {
 		text-transform: uppercase;
 	}
+	&-table {
+		padding-left: 1rem;
+	}
 }
 
 // О КОЛЛЕДЖЕ
 .about {
-	box-shadow: 1px 1px 10px #000;
+	.shadow;
 	padding: 2rem 0px;
 	&-title {
 		margin-top: -1rem;
 		text-align: center;
 		margin-bottom: 3rem;
 		text-transform: uppercase;
+		color: @title-color;
 	}
 	&-structure {
 		margin-top: -1rem;
-		box-shadow: 1px 1px 10px #000;
+		.shadow;
 		background-color: @main-color;
-		color: #fff;
+		color: @font-color;
 		&_title {
 			text-align: center;
+			color: @title-color;
 		}
 	}
 	&-license {	
+		color: @title-color;
 		&_text {
 			font-weight: 700;
 			margin-bottom: 2rem;
 		}
 		&_link {
 			.btn-mixin;
-			color: @main-color;
+			color: @font-color;
 			&:hover {
 				text-decoration: none;
 			}
@@ -141,39 +150,36 @@ body {
 		&_title {
 			text-align: center;
 			padding: 10px 0px;
+			color: @title-color;
 		}
 		&_btn {
 			&-open {
-				color: @main-color;
+				color: @font-color;
 				.btn-mixin;
 			}
 			&-close {
 				.btn-mixin;
-				color: @main-color;
+				color: @font-color;
 			}
 		}
 	}
 	&-documents {
-		box-shadow: 1px 1px 10px #000;
+		.shadow;
 		background-color: @main-color;
-		color: #fff;
+		color: @font-color;
 		&_title {
 			padding: 10px 0px;
+			color: @title-color;
 			&-modal {
-				color: @main-color;
+				color: @title-color;
 			}
 		}
 		&_btn {
 			&-open {
 				.btn-mixin;
-				color: #fff;
-				background-color: @main-color;
 				border: 1px solid #fff;
 				margin-bottom: 4rem;
-				&:hover {
-					background-color: #fff;
-					color: @main-color;
-				}
+				background-color: @bgcolor;
 			}
 			&-close {
 				.btn-mixin;
@@ -198,7 +204,7 @@ body {
 				border-bottom: 2px solid transparent;
 				transition: all 0.3s;
 				&:hover {
-					color: @main-color;
+					color: @hover-color;
 					text-decoration: underline;
 				}
 			}
@@ -208,7 +214,7 @@ body {
 
 // РУКОВОДСТВО
 .leadership {
-	box-shadow: 1px 1px 10px #000;
+	.shadow;
 	color: #fff;
 	&-box {
 		background-color: @main-color;
@@ -217,18 +223,20 @@ body {
 		margin-top: 10px;
 		text-align: center;
 		margin-bottom: 1rem;
+		color: @title-color;
 	}
 }
 
-// ПРЕПОДАВАТЕЛИ (И РУКОВОДСТВО)
+// ПРЕПОДАВАТЕЛИ (И РУКОВОДСТВО) !!!
 .teachers {
 	&-box {
 		cursor: pointer;
 		transition: all 0.3s;
+		color: @font-color;
 		&:hover {
-			box-shadow: 1px 1px 10px #000;
-			background-color: #fff;
-			color: @main-color;
+			.shadow;
+			background-color: @bgcolor;
+			color: @hover-color;
 		}
 	}
 	&-img {
@@ -239,11 +247,12 @@ body {
 	}
 	&-title {
 		text-align: center;
+		color: @title-color;
 	}
 	&-btn {
 		&_close {
 			.btn-mixin;
-			color: @main-color;
+			color: @font-color;
 		}
 	}
 	&-slider {
@@ -263,12 +272,16 @@ body {
 			height: 300px;
 			margin-left: 15px;
 			margin-right: 15px;
+
 		}
 		&_text {
 			bottom: 0;
 			width: 100%;
-			color: @main-color;
+			color: @font-color;
 			text-align: center;
+			&:hover {
+				color: @hover-color;
+			}
 		}
 		&-title,
 		&-desc {
@@ -276,28 +289,27 @@ body {
 			padding: 0 10px;
 		}
 	}
-	&-position {
-		&:hover {
-		}
-	}
 }
 
 // ДЕЯТЕЛЬНОСТЬ 
 .activities {
 	background-color: @main-color;
-	color: #fff;
+	color: @font-color;
 	.shadow;
 	&-title {
 		text-align: center;
 		text-transform: uppercase;
+		color: @title-color;
 	}
 	&-main {
 		text-align: center;
+		color: @title-color;
 	}
 	&-shedule {
 		text-align: center;
+		color: @title-color;
 		&_box {
-			background-color: #fff;
+			background-color: @bgcolor;
 			color: #000;
 			.shadow;
 		}
@@ -306,23 +318,24 @@ body {
 		color: @link-color;
 		transition: all 0.3s;
 		&:hover {
-			color: @main-color;
+			color: @hover-color;
 			text-decoration: underline;
 		}
 	}
 	&-programs {
 		text-align: center;
+		color: @title-color;
 	}
 	&-reports {
 		text-align: center;
+		color: @title-color;
 		&_box {
-			background-color: #fff;
+			background-color: @bgcolor;
 			.shadow;
-			color: #000;
 			a {
 				color: @link-color;
 				&:hover {
-					color: @main-color;
+					color: @hover-color;
 					text-decoration: underline;
 				}
 			}
@@ -330,14 +343,14 @@ body {
 	}
 	&-standarts {
 		text-align: center;
+		color: @title-color;
 		&_box {
-			background-color: #fff;
+			background-color: @bgcolor;
 			.shadow;
-			color: #000;
 			a {
 				color: @link-color;
 				&:hover {
-					color: @main-color;
+					color: @hover-color;
 					text-decoration: underline;
 				}
 			}
@@ -345,15 +358,18 @@ body {
 	}
 	&-scroll {
 		text-align: center;
+		color: @title-color;
 	}
 }
 
 // АБИТУРИЕНТАМ
 .enrollee {
 	&-title {
-		text-align: center;
-		text-transform: uppercase;
-		margin-bottom: 2rem;
+		&__main {
+			text-align: center;
+			text-transform: uppercase;
+			color: @title-color;
+		}
 	}
 	&-order {
 		&_box {
@@ -392,42 +408,15 @@ body {
 			}
 		}
 	}
-	&-rules {
-		&_btn {
-			margin-top: 1rem;
-			.btn-mixin;
-			color: @main-color;
-		}
-	}
-	&-invalid {
-		&_box {
-			background-color: @main-color;
-			color: #fff;
-			.shadow;
-		}
-		&_btn {
-			.btn-mixin;
-			color: #fff;
-			background-color: @main-color;
-			border: 1px solid #fff;
-			margin-top: 1rem;
-			margin-bottom: 1rem;
-			&:hover {
-				background-color: #fff;
-				color: @main-color;
-			}
-			&__close {
-				.btn-mixin;
-				color: @main-color;
-			}
-		}
-	}
 	&-specialties {
 		&_title {
 			text-align: center;
 			margin-top: 3rem;
 			margin-bottom: 2rem;
 		}
+	}
+	&-body {
+		padding: 0px 1rem 0px 1rem;
 	}
 	&-cost {
 		text-align: center;
@@ -439,7 +428,7 @@ body {
 			display: block;
 			text-align: center;
 			.btn-mixin;
-			color: @main-color;
+			color: @font-color;
 			margin-left: 28%;
 			margin-right: 28%;
 		}
@@ -449,7 +438,7 @@ body {
 		&_box {
 			background-color: @main-color;
 			.shadow;
-			color: #fff;
+			color: @title-color;
 		}
 		&_btn {
 			.btn-mixin;
@@ -457,14 +446,61 @@ body {
 			text-align: center;
 			margin-left: 28%;
 			margin-right: 28%;
-			color: #fff;
-			background-color: @main-color;
+			color: @font-color;
+			background-color: @bgcolor;
 			border: 1px solid #fff;
 			margin-bottom: 1rem;
+			transition: all 0.3s;
 			&:hover {
-				background-color: #fff;
-				color: @main-color;
+				color: @hover-color;
 			}
+		}
+	}
+	&-heading {
+		background: @main-color;
+		color: @font-color;
+		border-radius: 0;
+		text-align: center;
+		.shadow;
+	}
+	&-title a {
+		display: block;
+		color: @title-color;
+		width: 100%;
+		height: 3rem;
+		line-height: 3rem;
+		font-size: 20px;
+		transition: all 0.3s;
+		&:hover {
+			text-decoration: none;
+			color: @hover-color;
+		}
+	}
+	&-body {
+		border: 5px solid #dcdcdc;
+		border-bottom-left-radius: 8px;
+		border-bottom-right-radius: 8px;
+	}
+}
+
+.student {
+	&-title {
+		text-align: center;
+		color: @title-color;
+		text-transform: uppercase;
+	}
+	&-schedule {
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	&-link {
+		.btn-mixin;
+		text-transform: none;
+		color: @font-color;
+		transition: all 0.3s;
+		font-size: 3rem;
+		&:hover {
+			text-decoration: none;
 		}
 	}
 }
@@ -490,6 +526,26 @@ body {
 	}
 }
 
+.arrow {
+	position: absolute;
+	top: 50%;
+	z-index: 99;
+	width: 2rem;
+	height: 2rem;
+	border: none;
+	transform: scaleY(-50%);
+}
+
+.prev {
+	background: url() no-repeat center;
+	left: 0;
+}
+
+.next {
+	background: url() no-repeat center;
+	right: 0;
+}
+
 .close {
 	border: none;
 	font-size: 2.5rem;
@@ -503,4 +559,41 @@ a:active, a:focus {
 } 
 a::-moz-focus-inner { 
 	border: 0; 
+}
+
+@media (max-width: 576px) {
+	.main {
+		height: 100vh;
+		&-title {
+			font-size: 5rem;
+		}
+		&-line {
+			width: 250px;
+		}
+		&-desc {
+			font-size: 2rem;
+		}
+	}
+	.about {
+		&-state {
+			background-color: @main-color;
+			margin: 0;
+			.shadow;
+			color: #fff;
+			&_btn {
+				&-open {
+					margin-bottom: 2rem;
+				}
+			}
+			&_title {
+				margin-top: 2rem;
+			}
+		}
+		&-documents {
+			margin: 0;
+			box-shadow: none;
+			background-color: #fff;
+			color: #000;
+		}
+	}
 }
