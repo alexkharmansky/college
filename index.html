@@ -17,17 +17,17 @@
   <body>
 
   	<!-- ШАПКА hidden-xs -->
-    <header>
+    <header id="menu">
 		<div class="header-box">
 	    	<div class="container">
 	    		<div class="row text-center">
 			    		<ul class="header-list">
-			    			<li class="header-items"><a href="#">Главная</a></li>
-			    			<li class="header-items"><a href="#">О колледже</a></li>
-			    			<li class="header-items"><a href="#">Деятельность</a></li>
-			    			<li class="header-items"><a href="#">Абитуриентам</a></li>
-			    			<li class="header-items"><a href="#">Студенту</a></li>
-			    			<li class="header-items"><a href="#">Контакты</a></li>
+			    			<li class="header-items"><a href="#main">Главная</a></li>
+			    			<li class="header-items"><a href="#about">О колледже</a></li>
+			    			<li class="header-items"><a href="#activities">Деятельность</a></li>
+			    			<li class="header-items"><a href="#enrollee">Абитуриентам</a></li>
+			    			<li class="header-items"><a href="#student">Студенту</a></li>
+			    			<li class="header-items"><a href="#contacts">Контакты</a></li>
 			    		</ul>
 	    		</div>
 	    	</div>
@@ -35,7 +35,7 @@
     </header>
 
 	<!-- ГЛАВНАЯ -->
-    <section class="main parallax-window" data-parallax="scroll" data-image-src="img/main-bg2.jpg">
+    <section class="main parallax-window" id="main" data-parallax="scroll" data-image-src="img/main-bg2.jpg">
     	<div class="container main-container">
     		<div class="row main-row">
     			<div class="main-content">
@@ -48,7 +48,7 @@
     </section>
 	
 	<!-- О КОЛЛЕДЖЕ -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="row">
 				<h1 class="about-title">О колледже</h1>
@@ -951,7 +951,7 @@
 	</section>
 
 	<!-- ДЕЯТЕЛЬНОСТЬ -->
-	<section class="activities">
+	<section class="activities" id="activities">
 		<div class="container">
 			<div class="row">
 				<h1 class="activities-title">Деятельность</h1>
@@ -1041,7 +1041,7 @@
 	</section>
 
 	<!-- АБИТУРИЕНТАМ -->
-	<section class="enrollee">
+	<section class="enrollee" id="enrollee">
 		<div class="container-fluid">
 			<div class="row">
 				<h1 class="enrollee-title__main">Абитуриентам</h1>
@@ -2038,9 +2038,9 @@
 	</section>
 
 	<!-- СТУДЕНТУ -->
-	<section class="student">
+	<section class="student" id="student">
 		<div class="container">
-			<div class="row">
+			<div class="row student-row_1">
 				<h1 class="student-title">Студенту</h1>
 				<h2 class="student-schedule">Расписание</h2>
 				<div class="col-lg-3 text-center">
@@ -2057,14 +2057,50 @@
 				</div>
 			</div>
 			<div class="row">
-				<h2 class="student-practice">Графики практик</h2>
-				<div class="col-lg-3"></div>
-				<div class="col-lg-3"></div>
-				<div class="col-lg-3"></div>
-				<div class="col-lg-3"></div>
+				<div class="col-lg-3 student-curator_box text-center">
+					<h3 class="student-curator">Кураторы групп</h3>
+					<button class="student-curator_btn__open">Посмотреть</button>
+				</div>
+				<div class="col-lg-6">
+					<h3 class="student-practice">Графики практик</h3>
+					<ul class="student-list">
+						<li class="student-items"><a href="#" target="_blank">График практик Отделения естественнонаучных и инженерных специальностей на 2017-2018 учебный год</a></li>
+						<li class="student-items"><a href="#" target="_blank">График практик Отделения информационных технологий на 2017-2018 учебный год</a></li>
+						<li class="student-items"><a href="#" target="_blank">График практики Отделения издательско-полиграфических дисциплин на 2017-2018 учебный год</a></li>
+						<li class="student-items"><a href="#" target="_blank">График практики Отделения сферы обслуживания, менеджмента и финансов на 2017-2018 учебный год</a></li>
+					</ul>
+				</div>
+				<div class="col-lg-3 student-sm_box text-center">
+					<h3 class="student-sm">Студенческое самоуправление</h3>
+					<button class="student-sm_btn__open">Посмотреть</button>
+				</div>
 			</div>
 		</div>
 	</section>
+
+	<footer id="contacts">
+		<div class="container">
+			<div class="row">
+				<h1 class="contacts-title">Контакты</h1>
+				<div class="col-lg-6">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.4398627671603!2d34.090875392496464!3d44.97537488858594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd89b3bd2b8b%3A0x637dc7e218971780!2zMTE2INGD0LsuINCa0LjQtdCy0YHQutCw0Y8sINCh0LjQvNGE0LXRgNC-0L_QvtC70Yw!5e0!3m2!1sru!2s!4v1508361424511" width="550" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-6">
+					<p class="contacts-text"><b>Таврический колледж</b> (структурное подразделение) федерального государственного автономного образовательного учреждения высшего образования «Крымский федеральный университет имени В.И. Вернадского».<br><br>
+					<b>Директор:</b> Гавриленко Юлия Михайловна<br><br>
+					<b>Адрес:</b> 295034, Республика Крым, г. Симферополь, ул. Киевская, 116-б<br><br>
+					<b>Телефон:</b> <a href="tel:3652545286" class="contacts-phone">(3652) 54-52-86</a><br><br>
+					<b>E-Mail:</b> <a href="mailto:Kolledzh.tnu@mail.ru" class="contacts-mail">Kolledzh.tnu@mail.ru</a></p>
+				</div>
+			</div>
+			<div class="row text-center">
+				<p class="footer-text">2015-2017 © Таврический колледж<br>
+				Крымского федерального университета имени В.И. Вернадского<br>
+				Республика Крым, г. Симферополь ул.Киевская, 116-А<br>
+				Телефон: 54-52-86</p>
+			</div>
+		</div>
+	</footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="js/jquery-2.1.1.js"></script>
@@ -2095,8 +2131,19 @@
 			},
 			]
 		});
+
+		$(document).ready(function(){
+			$("#menu").on("click", "a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+					top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 800);
+			});
+		});
 	</script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
+
+<!-- AIzaSyAO7Ho8GWEUSiIPQEj-G6T_LZsUjY7hCGw -->

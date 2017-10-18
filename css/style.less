@@ -12,10 +12,10 @@
 // МИКСИНЫ
 .btn-mixin {
 	background-color: #fff;
-	border: 1px solid @main-color;
 	padding: 1rem 3rem;
 	transition: all 0.3s;
 	text-transform: uppercase;
+	border: none;
 	.shadow;
 	&:hover {
 		color: @hover-color;
@@ -66,11 +66,9 @@ body {
 		color: @title-color;
 		transition: all 0.3s;
 		padding-bottom: 1px;
-		border-bottom: 2px solid transparent;
 		&:hover {
 			color: @hover-color;
 			text-decoration: none;
-			border-bottom: 2px solid @hover-color;
 		}
 	}
 }
@@ -155,10 +153,12 @@ body {
 		&_btn {
 			&-open {
 				color: @font-color;
+				border: none;
 				.btn-mixin;
 			}
 			&-close {
 				.btn-mixin;
+				border: none;
 				color: @font-color;
 			}
 		}
@@ -176,12 +176,13 @@ body {
 		}
 		&_btn {
 			&-open {
+				border: none;
 				.btn-mixin;
-				border: 1px solid #fff;
 				margin-bottom: 4rem;
 				background-color: @bgcolor;
 			}
 			&-close {
+				border: none;
 				.btn-mixin;
 				background-color: @main-color;
 				&:hover {
@@ -251,8 +252,10 @@ body {
 	}
 	&-btn {
 		&_close {
+			border: none;
 			.btn-mixin;
 			color: @font-color;
+			background-color: @bgcolor;
 		}
 	}
 	&-slider {
@@ -401,7 +404,6 @@ body {
 			margin-bottom: 2rem;
 			color: #fff;
 			background-color: @main-color;
-			border: 1px solid #fff;
 			&:hover {
 				background-color: #fff;
 				color: @main-color;
@@ -448,7 +450,6 @@ body {
 			margin-right: 28%;
 			color: @font-color;
 			background-color: @bgcolor;
-			border: 1px solid #fff;
 			margin-bottom: 1rem;
 			transition: all 0.3s;
 			&:hover {
@@ -477,9 +478,7 @@ body {
 		}
 	}
 	&-body {
-		border: 5px solid #dcdcdc;
-		border-bottom-left-radius: 8px;
-		border-bottom-right-radius: 8px;
+		background-color: @main-color;
 	}
 }
 
@@ -493,6 +492,13 @@ body {
 		text-align: center;
 		margin-bottom: 3rem;
 	}
+	&-items a {
+		color: @link-color;
+		transition: all 0.3s;
+		&:hover {
+			color: @hover-color;
+		}
+	}
 	&-link {
 		.btn-mixin;
 		text-transform: none;
@@ -502,6 +508,81 @@ body {
 		&:hover {
 			text-decoration: none;
 		}
+	}
+	&-row {
+		&_1 {
+			margin-bottom: 5rem;
+		}
+	}
+	&-practice {
+		text-align: center;
+		margin-top: -2rem;
+	}
+	&-curator {
+		text-align: center;
+		margin-top: 3rem;
+		&_box {
+			.shadow;
+			background-color: @main-color;
+		}
+		&_btn {
+			&__open {
+				.btn-mixin;
+				background-color: @bgcolor;
+				margin-top: 1rem;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+	&-sm {
+		&_box {
+			.shadow;
+			background-color: @main-color;
+		}
+		&_btn {
+			&__open {
+				.btn-mixin;
+				background-color: @bgcolor;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+// КОНТАКТЫ
+footer {
+	.shadow;
+	background-color: @main-color;
+}
+.contacts {
+	&-title {
+		text-align: center;
+		margin-bottom: 3rem;
+		text-transform: uppercase;
+	}
+	&-text {
+		text-align: justify;
+		margin-top: 2.5rem;
+	}
+	&-phone {
+		color: @link-color;
+		transition: all 0.3s;
+		&:hover {
+			color: @hover-color;
+		}
+	}
+	&-mail {
+		color: @link-color;
+		transition: all 0.3s;
+		&:hover {
+			color: @hover-color;
+		}
+	}
+}
+.footer {
+	&-text {
+		margin-top: 2rem;
+		font-size: 12px;
 	}
 }
 
