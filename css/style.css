@@ -18,6 +18,15 @@ a:focus,
 a:visited,
 a:active {
   text-decoration: none;
+  border: none  !important;
+  outline: none  !important;
+}
+button:active,
+button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
 }
 html {
   font-size: 10px;
@@ -26,31 +35,119 @@ body {
   font-family: 'Merriweather', sans-serif;
   background-color: #f3f3f3;
 }
-.header-box {
-  z-index: 9;
+.menu {
+  opacity: .8;
+  z-index: 1;
+  background-color: black;
   position: fixed;
   width: 100vw;
-  background-color: #ffffff;
-  box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
-  padding-right: 5.8rem;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: -100vw;
+  transition: all 0.5s;
 }
-.header-list {
-  margin-top: 1rem;
-}
-.header-items {
-  display: inline;
-  margin-left: 12px;
-  margin-right: 12px;
-}
-.header-items a {
-  color: #111111;
+.menu-link {
+  z-index: 9;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  opacity: .5;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 20px;
+  left: 20px;
   transition: all 0.3s;
-  padding-bottom: 1px;
 }
-.header-items a:hover {
-  color: #ff0000;
+.menu-link:hover {
+  opacity: .9;
+}
+.menu-link span,
+.menu-link span:before,
+.menu-link span:after {
+  display: block;
+  height: 2px;
+  width: 18px;
+  background-color: #000;
+  position: absolute;
+  left: 50%;
+  margin-left: -9px;
+  top: 50%;
+  margin-top: -1px;
+}
+.menu-link span:before {
+  transition: all 0.2s;
+  content: '';
+  margin-top: -6px;
+}
+.menu-link span:after {
+  transition: all 0.2s;
+  content: '';
+  margin-top: 4px;
+}
+.menu-link_active span {
+  background-color: transparent;
+}
+.menu-link_active span:before {
+  transform: rotate(135deg);
+  margin-top: 0;
+}
+.menu-link_active span:after {
+  transform: rotate(-135deg);
+  margin-top: 0;
+}
+.menu_active {
+  left: 0;
+}
+.menu ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+.menu ul li {
+  width: 100vw;
+}
+.menu ul a {
+  display: block;
+  width: 100%;
+  line-height: 4;
+  color: #fff;
+  transition: all 0.2s;
+  font-size: 2rem;
+}
+.menu ul a:hover {
   text-decoration: none;
+  background-color: rgba(255, 255, 255, 0.4);
 }
+/* .header {
+	&-box {
+		z-index: 9;
+		position: fixed;
+		width: 100vw;
+		background-color: @main-color;
+		.shadow;
+		padding-right: 5.8rem;
+	}
+	&-list {
+		margin-top: 1rem;
+	}
+	&-items {
+		display: inline;
+		margin-left: 12px;
+		margin-right: 12px;
+	}
+	&-items a {
+		color: @title-color;
+		transition: all 0.3s;
+		padding-bottom: 1px;
+		&:hover {
+			color: @hover-color;
+			text-decoration: none;
+		}
+	}
+} */
 .main {
   height: 100vh;
   background: no-repeat center;
@@ -242,15 +339,16 @@ body {
   color: #5e5e5e;
 }
 .teachers-box:hover {
-  box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   background-color: #f3f3f3;
-  color: #ff0000;
 }
 .teachers-img {
   margin-top: 1rem;
   padding: 0 5px;
   min-height: 300px;
   min-width: 250px;
+}
+.teachers-img:hover {
+  background: #fff;
 }
 .teachers-title {
   text-align: center;
@@ -291,13 +389,8 @@ body {
   color: #5e5e5e;
   text-align: center;
 }
-.teachers-slider_text:hover {
-  color: #ff0000;
-}
-.teachers-slider-title,
-.teachers-slider-desc {
-  margin: 0;
-  padding: 0 10px;
+.teachers-slider_desc {
+  font-size: 12px;
 }
 .activities {
   background-color: #ffffff;
@@ -661,6 +754,94 @@ a:focus {
 a::-moz-focus-inner {
   border: 0;
 }
+@media (max-width: 1200px) {
+  .enrollee-list_box {
+    background-color: #f3f3f3;
+    box-shadow: none;
+  }
+  .enrollee-list_btn {
+    background-color: #ffffff;
+    padding: 10px;
+  }
+  .enrollee-cost_btn {
+    padding: 10px;
+  }
+  .enrollee-method {
+    font-size: 2.2rem;
+  }
+  .student-curator {
+    margin: 0;
+  }
+  .student-curator_box {
+    background-color: #f3f3f3;
+    box-shadow: none;
+  }
+  .student-curator_btn__open {
+    background-color: #ffffff;
+  }
+  .student-practice {
+    margin: 0;
+  }
+  .student-sm {
+    margin-top: -1rem;
+  }
+  .student-sm_box {
+    background-color: #f3f3f3;
+    box-shadow: none;
+    margin-top: -10rem;
+  }
+  .student-sm_btn__open {
+    background-color: #ffffff;
+  }
+  .contacts-text {
+    margin: 0;
+  }
+}
+@media (max-width: 992px) {
+  .activities-reports_box {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+  .activities-shedule_box {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+  .activities-standarts_box {
+    background-color: #ffffff;
+    box-shadow: none;
+  }
+  .enrollee-heading_invalid {
+    height: 6rem;
+  }
+  .enrollee-list_box {
+    margin-top: 1rem;
+  }
+  .student-link {
+    font-size: 2.8rem;
+  }
+  .student-sm_box {
+    margin-top: 3rem;
+  }
+  .gmaps {
+    margin-left: 8rem;
+  }
+  .contacts-text {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .about-structure {
+    background-color: #f3f3f3;
+    box-shadow: none;
+  }
+  .about-documents {
+    background-color: #f3f3f3;
+    box-shadow: none;
+  }
+  .about-documents_btn-open {
+    background-color: #ffffff;
+  }
+}
 @media (max-width: 576px) {
   .main {
     height: 100vh;
@@ -674,22 +855,22 @@ a::-moz-focus-inner {
   .main-desc {
     font-size: 2rem;
   }
-  .about-state {
-    background-color: #ffffff;
-    margin: 0;
-    box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
-    color: #fff;
-  }
-  .about-state_btn-open {
-    margin-bottom: 2rem;
-  }
-  .about-state_title {
-    margin-top: 2rem;
+  .about-structure {
+    background-color: #f3f3f3;
+    box-shadow: none;
   }
   .about-documents {
-    margin: 0;
+    background-color: #f3f3f3;
     box-shadow: none;
-    background-color: #fff;
-    color: #000;
+  }
+  .about-documents_btn-open {
+    background-color: #ffffff;
+  }
+  .student-link {
+    font-size: 15px;
+  }
+  .gmaps {
+    margin: 0;
+    padding-right: 16.4rem;
   }
 }

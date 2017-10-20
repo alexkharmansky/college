@@ -17,7 +17,8 @@
   <body>
 
   	<!-- ШАПКА hidden-xs -->
-    <header id="menu">
+
+<!--     <header id="menu">
 		<div class="header-box">
 	    	<div class="container">
 	    		<div class="row text-center">
@@ -32,7 +33,21 @@
 	    		</div>
 	    	</div>
 		</div>
-    </header>
+    </header> -->
+    <a href="#menu" class="menu-link">
+    	<span></span>
+    </a>
+    
+    <div class="menu" id="list">
+    	<ul class="header-list">
+			<li class="header-items"><a href="#main">Главная</a></li>
+			<li class="header-items"><a href="#about">О колледже</a></li>
+			<li class="header-items"><a href="#activities">Деятельность</a></li>
+			<li class="header-items"><a href="#enrollee">Абитуриентам</a></li>
+			<li class="header-items"><a href="#student">Студенту</a></li>
+			<li class="header-items"><a href="#contacts">Контакты</a></li>
+		</ul>
+    </div>
 
 	<!-- ГЛАВНАЯ -->
     <section class="main parallax-window" id="main" data-parallax="scroll" data-image-src="img/main-bg2.jpg">
@@ -52,7 +67,7 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="about-title">О колледже</h1>
-				<div class="col-lg-6 about-structure">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-structure">
 					<h3 class="about-structure_title">Структура</h3>
 					<ul class="about-structure_list">
 						<li class="li">Отделение естественнонаучных и инженерных специальностей</li>
@@ -61,20 +76,20 @@
 						<li class="li">Методический кабинет</li>
 					</ul>
 				</div>
-				<div class="col-lg-6 about-license_box text-center">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-license_box text-center">
 					<h3 class="about-license">Лицензия</h3>
 					<p class="about-license_text">Таврический колледж (структурное подразделение)<br>ФГФОУ ВО «Крымский федеральный университет имени В.И. Вернадского»</p>
 					<a href="http://college.cfuv.ru/wp-content/uploads/2015/10/lizen00.pdf" class="about-license_link">Посмотреть</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6 about-state text-center">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-state text-center">
 					<h3 class="about-state_title">Положение</h3>
 					<button type="button" class="about-state_btn-open" data-toggle="modal" data-target="#state-modal">
 					  Посмотреть
 					</button>
 				</div>
-				<div class="col-lg-6 about-documents text-center">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-documents text-center">
 					<h3 class="about-documents_title">Документы</h3>
 					<button type="button" class="about-documents_btn-open" data-toggle="modal" data-target="#exampleModalLong">
 					  Открыть список документов
@@ -436,39 +451,70 @@
 		<div class="leadership-box">
 			<div class="container">
 			<div class="row">
+				<!-- 				<h2 class="leadership-title">Руководство</h2>
+								<div class="col-lg-3 text-center">
+									<div class="teachers-box" data-toggle="modal" data-target="#gavrilenko">
+									<img src="img/teachers/gavrilenko.jpg" alt="Директор" class="teachers-img">
+									<br>
+									<b>Гавриленко <br> Юлия Михайловна</b>
+									<p>Директор</p>
+									</div>
+								</div>
+								<div class="col-lg-3 text-center">
+									<div class="teachers-box" data-toggle="modal" data-target="#shatalina">
+									<img src="img/teachers/shatalina.jpg" alt="Зам. директора" class="teachers-img">
+									<br>
+									<b>Шаталина <br> Елена Фёдоровна</b>
+									<p>Зам. директора</p>
+									</div>
+								</div>
+								<div class="col-lg-3 text-center">
+									<div class="teachers-box" data-toggle="modal" data-target="#kucher">
+									<img src="img/teachers/kucher.jpg" alt="Зам. директора" class="teachers-img">
+									<br>
+									<b>Кучер <br> Лариса Сергеевна</b>
+									<p>Зам. директора</p>
+									</div>
+								</div>
+								<div class="col-lg-3 text-center">
+									<div class="teachers-box" data-toggle="modal" data-target="#maluga">
+									<img src="img/teachers/maluga.png" alt="Зам. директора" class="teachers-img">
+									<br>
+									<b>Малюга <br> Галина Григорьевна</b>
+									<p>Зам. директора</p>
+									</div>
+								</div> -->
 				<h2 class="leadership-title">Руководство</h2>
-				<div class="col-lg-3 text-center">
-					<div class="teachers-box" data-toggle="modal" data-target="#gavrilenko">
-					<img src="img/teachers/gavrilenko.jpg" alt="Директор" class="teachers-img">
-					<br>
-					<b>Гавриленко <br> Юлия Михайловна</b>
-					<p>Директор</p>
+				<div class="teachers-slider">
+					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#gavrilenko">
+							<img src="img/teachers/gavrilenko.jpg" alt="" class="teachers-slider_img">
+							<div class="teachers-slider_text">
+								<b class="teachers-slider_title">Гавриленко <br> Юлия Михайловна</b>
+								<p class="teachers-slider_desc">Директор</p>
+							</div>
+						</div>
+					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#shatalina">
+							<img src="img/teachers/shatalina.jpg" alt="" class="teachers-slider_img">
+							<div class="teachers-slider_text">
+								<b class="teachers-slider_title">Шаталина <br> Елена Фёдоровна</b>
+								<p class="teachers-slider_desc">Зам. директора</p>
+							</div>
+						</div>
+					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#kucher">
+							<img src="img/teachers/kucher.jpg" alt="" class="teachers-slider_img">
+							<div class="teachers-slider_text">
+								<b class="teachers-slider_title">Кучер <br> Лариса Сергеевна</b>
+								<p class="teachers-slider_desc">Зам. директора</p>
+							</div>
+						</div>
+					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#maluga">
+							<img src="img/teachers/maluga.png" alt="" class="teachers-slider_img">
+							<div class="teachers-slider_text">
+								<b class="teachers-slider_title">Малюга <br> Галина Григорьевна</b>
+								<p class="teachers-slider_desc">Зам. директора</p>
+							</div>
+						</div>
 					</div>
-				</div>
-				<div class="col-lg-3 text-center">
-					<div class="teachers-box" data-toggle="modal" data-target="#shatalina">
-					<img src="img/teachers/shatalina.jpg" alt="Зам. директора" class="teachers-img">
-					<br>
-					<b>Шаталина <br> Елена Фёдоровна</b>
-					<p>Зам. директора</p>
-					</div>
-				</div>
-				<div class="col-lg-3 text-center">
-					<div class="teachers-box" data-toggle="modal" data-target="#kucher">
-					<img src="img/teachers/kucher.jpg" alt="Зам. директора" class="teachers-img">
-					<br>
-					<b>Кучер <br> Лариса Сергеевна</b>
-					<p>Зам. директора</p>
-					</div>
-				</div>
-				<div class="col-lg-3 text-center">
-					<div class="teachers-box" data-toggle="modal" data-target="#maluga">
-					<img src="img/teachers/maluga.png" alt="Зам. директора" class="teachers-img">
-					<br>
-					<b>Малюга <br> Галина Григорьевна</b>
-					<p>Зам. директора</p>
-					</div>
-				</div>
 			</div>
 		</div>
 		</div>
@@ -651,300 +697,258 @@
 			<div class="row">
 				<h2 class="teachers-title">Преподаватели</h2>
 				<div class="teachers-slider">
-					<div class="teachers-slider_slide"><a href="#">
+					<div class="teachers-slider_slide teachers-box">
 							<img src="img/teachers/zheleznyak1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Железняк<br> Александр Владимирович</b>
 								<p class="teachers-slider_desc">Основы программирования</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
 							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Горащук <br>Ольга Сергеевна</b>
 								<p class="teachers-slider_desc">Русский язык и литература</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Беленькая Анна Сергеевна</h3>
+								<b class="teachers-slider_title">Беленькая <br>Анна Сергеевна</b>
 								<p class="teachers-slider_desc">Основы философии</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/kondratenko1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Лаврова Ксения Викторовна</h3>
+								<b class="teachers-slider_title">Кондратенко <br>Елизавета Александровна</b>
 								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/kucher-d1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Кучер Дмитрий Александрович</h3>
+								<b class="teachers-slider_title">Кучер <br>Дмитрий Александрович</b>
 								<p class="teachers-slider_desc">Биология</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Borodina.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 6</h3>
-								<p class="teachers-slider_desc">Описание №6</p>
+								<b class="teachers-slider_title">Бородина <br>Кира Аркадьевна</b>
+								<p class="teachers-slider_desc">Физкультура</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/solovyev.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 7</h3>
-								<p class="teachers-slider_desc">Описание №7</p>
+								<b class="teachers-slider_title">Соловьев <br>Валерий Иванович</b>
+								<p class="teachers-slider_desc">Основы электротехники</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/luneva1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 8</h3>
-								<p class="teachers-slider_desc">Описание №8</p>
+								<b class="teachers-slider_title">Лунева <br>Виктория Ивановна</b>
+								<p class="teachers-slider_desc">История</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/starostin1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 9</h3>
-								<p class="teachers-slider_desc">Описание №9</p>
+								<b class="teachers-slider_title">Старостин <br>Виталий Анатольевич</b>
+								<p class="teachers-slider_desc">ОБЖ</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/lavrova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 10</h3>
-								<p class="teachers-slider_desc">Описание №10</p>
+								<b class="teachers-slider_title">Лаврова <br>Ксения Викторовна</b>
+								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/vlasova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 11</h3>
-								<p class="teachers-slider_desc">Описание №11</p>
+								<b class="teachers-slider_title">Власова <br>Анна Николаевна</b>
+								<p class="teachers-slider_desc">ИКТ</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/gymaltdinova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 12</h3>
-								<p class="teachers-slider_desc">Описание №12</p>
+								<b class="teachers-slider_title">Гималетдинова <br>Любовь Александровна</b>
+								<p class="teachers-slider_desc">Математика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/tixonravova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 13</h3>
-								<p class="teachers-slider_desc">Описание №13</p>
+								<b class="teachers-slider_title">Тихонравова <br>Наталья Владиславовна</b>
+								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/sherekina1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 14</h3>
-								<p class="teachers-slider_desc">Описание №14</p>
+								<b class="teachers-slider_title">Шерекина <br>Светлана Юрьевна</b>
+								<p class="teachers-slider_desc">География</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/bobkova.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 15</h3>
-								<p class="teachers-slider_desc">Описание №15</p>
+								<b class="teachers-slider_title">Бобкова <br>Людмила Николаевна</b>
+								<p class="teachers-slider_desc">Литература</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/bogoslavskaya.png" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 16</h3>
-								<p class="teachers-slider_desc">Описание №16</p>
+								<b class="teachers-slider_title">Богославская <br>Екатерина Игоревна</b>
+								<p class="teachers-slider_desc">Право</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/belenkaya1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 17</h3>
-								<p class="teachers-slider_desc">Описание №17</p>
+								<b class="teachers-slider_title">Беленькая <br>Ева Робертовна</b>
+								<p class="teachers-slider_desc">Аналитическая химия</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 18</h3>
-								<p class="teachers-slider_desc">Описание №18</p>
+								<b class="teachers-slider_title">Подурец <br>Антон Владимирович</b>
+								<p class="teachers-slider_desc">Экономика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/maluga.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 19</h3>
-								<p class="teachers-slider_desc">Описание №19</p>
+								<b class="teachers-slider_title">Малюга <br>Полина Александровна</b>
+								<p class="teachers-slider_desc">Маркетинг</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Mordvinov-200x300.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 20</h3>
-								<p class="teachers-slider_desc">Описание №20</p>
+								<b class="teachers-slider_title">Мордвинов <br>Вилен Евгеньевич</b>
+								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Klochkova-200x300.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 21</h3>
-								<p class="teachers-slider_desc">Описание №21</p>
+								<b class="teachers-slider_title">Клочкова <br>Галина Анатольевна</b>
+								<p class="teachers-slider_desc">Химия</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Melentsova.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 22</h3>
-								<p class="teachers-slider_desc">Описание №22</p>
+								<b class="teachers-slider_title">Меленцова <br>Наталья Витальевна</b>
+								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/nelina.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 23</h3>
-								<p class="teachers-slider_desc">Описание №23</p>
+								<b class="teachers-slider_title">Нелина <br>Нина Игоревна</b>
+								<p class="teachers-slider_desc">Основы полиграфического производства</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Mihlina0.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 24</h3>
-								<p class="teachers-slider_desc">Описание №24</p>
+								<b class="teachers-slider_title">Михлина <br>Ольга Васильвна</b>
+								<p class="teachers-slider_desc">История</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/madrik.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 25</h3>
-								<p class="teachers-slider_desc">Описание №25</p>
+								<b class="teachers-slider_title">Мадрик <br>Анжела Игоревна</b>
+								<p class="teachers-slider_desc">Математика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/kokoshkina.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 26</h3>
-								<p class="teachers-slider_desc">Описание №26</p>
+								<b class="teachers-slider_title">Кокошкина <br>Вера Анатольевна</b>
+								<p class="teachers-slider_desc">Дизайн</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/rush.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 27</h3>
-								<p class="teachers-slider_desc">Описание №27</p>
+								<b class="teachers-slider_title">Рюш <br>Ирина Олеговна</b>
+								<p class="teachers-slider_desc">Экология</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/andreichuk-200x300.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 28</h3>
-								<p class="teachers-slider_desc">Описание №28</p>
+								<b class="teachers-slider_title">Андрейчук <br>Анна Михайловна</b>
+								<p class="teachers-slider_desc">Прикладная информатика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/careva.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 29</h3>
-								<p class="teachers-slider_desc">Описание №29</p>
+								<b class="teachers-slider_title">Царёва <br>Наталья Олеговна</b>
+								<p class="teachers-slider_desc">Физкультура</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/chudinovich.png" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 30</h3>
-								<p class="teachers-slider_desc">Описание №30</p>
+								<b class="teachers-slider_title">Чудинович <br>Людмила Михайловна</b>
+								<p class="teachers-slider_desc">Экономика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Fedyaev.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 31</h3>
-								<p class="teachers-slider_desc">Описание №31</p>
+								<b class="teachers-slider_title">Федяев <br>Мирослав Иванович</b>
+								<p class="teachers-slider_desc">Обществознание</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/tsikunov.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 32</h3>
-								<p class="teachers-slider_desc">Описание №32</p>
+								<b class="teachers-slider_title">Цыкунов <br>Иван Александрович</b>
+								<p class="teachers-slider_desc">Экономика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/Smirnova.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 33</h3>
-								<p class="teachers-slider_desc">Описание №33</p>
+								<b class="teachers-slider_title">Смирнова <br>Евгения Валерьевна</b>
+								<p class="teachers-slider_desc">Математика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/fandaeeva.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 34</h3>
-								<p class="teachers-slider_desc">Описание №34</p>
+								<b class="teachers-slider_title">Фандеева <br>Оксана Николаевна</b>
+								<p class="teachers-slider_desc">Математика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/rudniktskaya.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 35</h3>
-								<p class="teachers-slider_desc">Описание №35</p>
+								<b class="teachers-slider_title">Рудницкая <br>Елена Степановна</b>
+								<p class="teachers-slider_desc">Русский язык</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
+						</div>
+					<div class="teachers-slider_slide teachers-box">
+							<img src="img/teachers/cheporova.png" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 36</h3>
-								<p class="teachers-slider_desc">Описание №36</p>
+								<b class="teachers-slider_title">Чепорова <br>Галина Евгеньевна</b>
+								<p class="teachers-slider_desc">Математика</p>
 							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
-							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 37</h3>
-								<p class="teachers-slider_desc">Описание №37</p>
-							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
-							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 38</h3>
-								<p class="teachers-slider_desc">Описание №38</p>
-							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
-							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 39</h3>
-								<p class="teachers-slider_desc">Описание №39</p>
-							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
-							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 40</h3>
-								<p class="teachers-slider_desc">Описание №40</p>
-							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
-							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 41</h3>
-								<p class="teachers-slider_desc">Описание №41</p>
-							</div>
-						</a></div>
-					<div class="teachers-slider_slide"><a href="#">
-							<img src="img/test-img.jpg" alt="" class="teachers-slider_img">
-							<div class="teachers-slider_text">
-								<h3 class="teachers-slider_title">Слайд 42</h3>
-								<p class="teachers-slider_desc">Описание №42</p>
-							</div>
-						</a></div>
+						</div>
 				</div>
 			</div>
 		</div>
@@ -955,7 +959,7 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="activities-title">Деятельность</h1>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<h3 class="activities-main">Основные профессиональные образовательные программы</h3>
 					<ul class="activities-list">
 						<li class="activities-items">Образовательная программа 09.02.01 Компьютерные системы и комплексы</li>
@@ -969,7 +973,7 @@
 						<li class="activities-items">Образовательная программа 54.02.01 Дизайн</li>
 					</ul>
 				</div>
-				<div class="col-lg-6 activities-shedule_box">
+				<div class="col-lg-6 col-md-6 activities-shedule_box">
 					<h3 class="activities-shedule">Графики учебного процесса</h3>
 					<ul class="activities-list">
 						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 09.02.01 Компьютерные системы и комплексы</a></li>
@@ -985,7 +989,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6 activities-reports_box">
+				<div class="col-lg-6 col-md-6 activities-reports_box">
 					<h3 class="activities-reports">Отчёты</h3>
 					<ul class="activities-list">
 						<li class="activities-items"><a href="#" class="activities-links">Отчет о работе методического кабинета в 2016-2017 учебном году</a></li>
@@ -994,7 +998,7 @@
 						<li class="activities-items"><a href="#" class="activities-links">Отчет о научно-исследовательской деятельности</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<h3 class="activities-programs">Программы учебных дисциплин</h3>
 					<ul class="activites-list">
 						<li class="activities-items">Программа учебной дисциплины № 1</li>
@@ -1005,7 +1009,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<h3 class="activities-scroll">Перечень направлений подготовки, специальностей</h3>
 					<ul class="activities-list">
 						<li class="activities-items"><b>09.02.01
@@ -1022,7 +1026,7 @@
 							Туризм</b> – срок обучения в колледже 3 года 10 мес., по окончанию учебы присваивается квалификация «Специалист по туризму»</li>
 					</ul>
 				</div>
-				<div class="col-lg-6 activities-standarts_box">
+				<div class="col-lg-6 col-md-6 activities-standarts_box">
 					<h3 class="activities-standarts">Образовательные стандарты</h3>
 					<ul class="activities-list">
 						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 09.02.01 Компьютерные системы и комплексы</a></li>
@@ -1046,7 +1050,7 @@
 			<div class="row">
 				<h1 class="enrollee-title__main">Абитуриентам</h1>
 				<div class="enrollee-group" id="accordion" role="tablist" aria-multiselectable="true">
-				  <div class="enrollee enrollee-color">
+				  <div class="enrollee-main">
 				      <div class="enrollee-heading" role="tab" id="headingOne">
 				        <h4 class="enrollee-title">
 				          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
@@ -1293,7 +1297,7 @@
 				        </div>
 				      </div>
 				  </div>
-			  <div class="enrollee enrollee-color">
+			  <div class="enrollee-main">
 			    <div class="enrollee-heading" role="tab" id="headingTwo">
 			      <h4 class="enrollee-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
@@ -1900,8 +1904,8 @@
 			      </div>
 			    </div>
 			  </div>
-				  <div class="enrollee enrollee-color">
-				    <div class="enrollee-heading" role="tab" id="headingThree">
+				  <div class="enrollee-main">
+				    <div class="enrollee-heading enrollee-heading_invalid" role="tab" id="headingThree">
 				      <h4 class="enrollee-title">
 				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				          Особенности проведения вступительных испытаний для лиц с ограниченными возможностями здоровья
@@ -1943,16 +1947,16 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-4 col-sm-12">
 					<h3 class="enrollee-cost enrollee-cost_1">Стоимость обучения</h3>
 					<a href="http://college.cfuv.ru/wp-content/uploads/2015/10/stoim-2017.pdf" class="enrollee-cost_btn">Посмотреть</a>
 				</div>
-				<div class="col-lg-4 enrollee-list_box">
+				<div class="col-lg-4 col-md-4 col-sm-12 enrollee-list_box">
 					<h3 class="enrollee-list">Списки абитуриентов, подавших документы</h3>
 					<a href="http://abitur.cfuv.ru/abitur/srednee-professionalnoe-obrazovanie/rejjtingovye-spiski-abiturientov-podavshikh-dokumenty-po-napravleniyu-podgotovki-srednego-professionalnogo-obrazovaniya/tavricheskijj-kolledzh" class="enrollee-list_btn">Посмотреть</a>
 				</div>
-				<div class="col-lg-4">
-					<h3 class="enrollee-cost">Методическое обеспечение дисциплин</h3>
+				<div class="col-lg-4 col-md-4 col-sm-12">
+					<h3 class="enrollee-cost enrollee-method">Методическое обеспечение дисциплин</h3>
 					<a href="http://college.cfuv.ru/wp-content/uploads/2017/05/Metod-VKR.pdf" class="enrollee-cost_btn">Посмотреть</a>
 				</div>
 			</div>
@@ -2043,25 +2047,25 @@
 			<div class="row student-row_1">
 				<h1 class="student-title">Студенту</h1>
 				<h2 class="student-schedule">Расписание</h2>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
 					<a href="files/1.pdf" class="student-link">1 курс</a>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
 					<a href="files/1.pdf" class="student-link">2 курс</a>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
 					<a href="files/1.pdf" class="student-link">3 курс</a>
 				</div>
-				<div class="col-lg-3 text-center">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
 					<a href="files/1.pdf" class="student-link">4 курс</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 student-curator_box text-center">
+				<div class="col-lg-3 col-md-6 col-sm-12 student-curator_box text-center">
 					<h3 class="student-curator">Кураторы групп</h3>
 					<button class="student-curator_btn__open">Посмотреть</button>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6 col-sm-12">
 					<h3 class="student-practice">Графики практик</h3>
 					<ul class="student-list">
 						<li class="student-items"><a href="#" target="_blank">График практик Отделения естественнонаучных и инженерных специальностей на 2017-2018 учебный год</a></li>
@@ -2070,7 +2074,7 @@
 						<li class="student-items"><a href="#" target="_blank">График практики Отделения сферы обслуживания, менеджмента и финансов на 2017-2018 учебный год</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 student-sm_box text-center">
+				<div class="col-lg-3 col-md-6 col-sm-12 student-sm_box text-center">
 					<h3 class="student-sm">Студенческое самоуправление</h3>
 					<button class="student-sm_btn__open">Посмотреть</button>
 				</div>
@@ -2082,10 +2086,10 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="contacts-title">Контакты</h1>
-				<div class="col-lg-6">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.4398627671603!2d34.090875392496464!3d44.97537488858594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd89b3bd2b8b%3A0x637dc7e218971780!2zMTE2INGD0LsuINCa0LjQtdCy0YHQutCw0Y8sINCh0LjQvNGE0LXRgNC-0L_QvtC70Yw!5e0!3m2!1sru!2s!4v1508361424511" width="550" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div class="col-lg-6 col-md-7 col-sm-12">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.4398627671603!2d34.090875392496464!3d44.97537488858594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd89b3bd2b8b%3A0x637dc7e218971780!2zMTE2INGD0LsuINCa0LjQtdCy0YHQutCw0Y8sINCh0LjQvNGE0LXRgNC-0L_QvtC70Yw!5e0!3m2!1sru!2s!4v1508361424511" width="550" height="300" frameborder="0" style="border:0" allowfullscreen class="gmaps"></iframe>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-5 col-sm-12">
 					<p class="contacts-text"><b>Таврический колледж</b> (структурное подразделение) федерального государственного автономного образовательного учреждения высшего образования «Крымский федеральный университет имени В.И. Вернадского».<br><br>
 					<b>Директор:</b> Гавриленко Юлия Михайловна<br><br>
 					<b>Адрес:</b> 295034, Республика Крым, г. Симферополь, ул. Киевская, 116-б<br><br>
@@ -2114,7 +2118,7 @@
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 4,
 					prevArrow: '<button class="prev arrow"></button>',
 					nextArrow: '<button class="next arrow"></button>',
 					slidesToScroll: 2
@@ -2123,21 +2127,37 @@
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 1,
+					slidesToShow: 2,
 					prevArrow: '<button class="prev arrow"></button>',
 					nextArrow: '<button class="next arrow"></button>',
-					slidesToScroll: 1
+					slidesToScroll: 2
 				}
 			},
 			]
 		});
 
 		$(document).ready(function(){
-			$("#menu").on("click", "a", function (event) {
+			$("#list").on("click", "a", function (event) {
 				event.preventDefault();
 				var id  = $(this).attr('href'),
 					top = $(id).offset().top;
 				$('body,html').animate({scrollTop: top}, 800);
+			});
+		});
+
+		$(document).ready(function(){
+			var link = $('.menu-link');
+			var link_active = $('.menu-link_active');
+			var menu = $('.menu');
+			var nav_link = $('.menu a');
+
+			link.click(function(){
+				link.toggleClass('menu-link_active');
+				menu.toggleClass('menu_active');
+			});
+			nav_link.click(function(){
+				link.toggleClass('menu-link_active');
+				menu.toggleClass('menu_active');
 			});
 		});
 	</script>

@@ -33,6 +33,15 @@ a:focus,
 a:visited,
 a:active {
 	text-decoration: none;
+	border:none  !important;
+    outline:none  !important;
+}
+
+button:active, button:focus {
+  outline: none !important;
+}
+button::-moz-focus-inner {
+  border: 0 !important;
 }
 
 html {
@@ -45,7 +54,92 @@ body {
 }
 
 // ШАПКА
-.header {
+.menu {
+	&-link {
+		z-index: 9;
+		display: block;
+		width: 50px;
+		height: 50px;
+		background-color: #fff;
+		opacity: .5;
+		box-shadow: 1px 1px 10px rgba(0,0,0,.4);
+		position: fixed;
+		top: 20px;
+		left: 20px;
+		transition: all 0.3s;
+		&:hover {
+			opacity: .9;
+		}
+		span, span:before, span:after {
+			display: block;
+			height: 2px;
+			width: 18px;
+			background-color: #000;
+			position: absolute;
+			left: 50%;
+			margin-left: -9px;
+			top: 50%;
+			margin-top: -1px;
+		}
+		span:before {
+			transition: all 0.2s;
+			content: '';
+			margin-top: -6px;
+		}
+		span:after {
+			transition: all 0.2s;
+			content: '';
+			margin-top: 4px;
+		}
+		&_active span {
+			background-color: transparent;
+			&:before {
+				transform: rotate(135deg);
+				margin-top: 0;
+			}
+			&:after {
+				transform: rotate(-135deg);
+				margin-top: 0;
+			}
+		}
+	}
+	opacity: .8;
+	z-index: 1;
+	background-color: black;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	left: -100vw;
+	transition: all 0.5s;
+	&_active {
+		left: 0;
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		text-align: center;
+		li {
+			width: 100vw;
+		}
+		a {
+			display: block;
+			width: 100%;
+			line-height: 4;
+			color: #fff;
+			transition: all 0.2s;
+			font-size: 2rem;
+			&:hover {
+				text-decoration: none;
+				background-color: rgba(255,255,255,.4);
+			}
+		}
+	}
+}
+
+/* .header {
 	&-box {
 		z-index: 9;
 		position: fixed;
@@ -71,7 +165,7 @@ body {
 			text-decoration: none;
 		}
 	}
-}
+} */
 
 // ГЛАВНАЯ
 .main {
@@ -235,9 +329,7 @@ body {
 		transition: all 0.3s;
 		color: @font-color;
 		&:hover {
-			.shadow;
 			background-color: @bgcolor;
-			color: @hover-color;
 		}
 	}
 	&-img {
@@ -245,6 +337,9 @@ body {
 		padding: 0 5px;
 		min-height: 300px;
 		min-width: 250px;
+		&:hover {
+			background: #fff;
+		}
 	}
 	&-title {
 		text-align: center;
@@ -265,31 +360,21 @@ body {
 		&_img {
 			text-align: center;
 			width: 100%;
-			// max-width: 250px;
-			// min-width: 250px;
-			// min-height: 300px;
-			// max-height: 300px;
 		}
 		&_slide {
 			width: 250px;
 			height: 300px;
 			margin-left: 15px;
 			margin-right: 15px;
-
 		}
 		&_text {
 			bottom: 0;
 			width: 100%;
 			color: @font-color;
 			text-align: center;
-			&:hover {
-				color: @hover-color;
-			}
 		}
-		&-title,
-		&-desc {
-			margin: 0;
-			padding: 0 10px;
+		&_desc {
+			font-size: 12px;
 		}
 	}
 }
@@ -642,6 +727,133 @@ a::-moz-focus-inner {
 	border: 0; 
 }
 
+
+@media (max-width: 1200px) {
+	.enrollee {
+		&-list {
+			&_box {
+				background-color: @bgcolor;
+				box-shadow: none;
+			}
+			&_btn {
+				background-color: @main-color;
+				padding: 10px;
+			}
+		}
+		&-cost {
+			&_btn {
+				padding: 10px;
+			}
+		}
+		&-method {
+			font-size: 2.2rem;
+		}
+	}
+	.student {
+		&-curator {
+			margin: 0;
+			&_box {
+				background-color: @bgcolor;
+				box-shadow: none;
+			}
+			&_btn {
+				&__open {
+					background-color: @main-color;
+				}
+			}
+		}
+		&-practice {
+			margin: 0;
+		}
+		&-sm {
+			margin-top: -1rem;
+			&_box {
+				background-color: @bgcolor;
+				box-shadow: none;
+				margin-top: -10rem;
+			}
+			&_btn {
+				&__open {
+					background-color: @main-color;
+				}
+			}
+		}
+	}
+	.contacts {
+		&-text {
+			margin: 0;
+		}
+	}
+}
+@media (max-width: 992px) {
+	.activities {
+		&-reports {
+			&_box {
+				background-color: @main-color;
+				box-shadow: none;
+			}
+		}
+		&-shedule {
+			&_box {
+				background-color: @main-color;
+				box-shadow: none;
+			}
+		}
+		&-standarts {
+			&_box {
+				background-color: @main-color;
+				box-shadow: none;
+			}
+		}
+	}
+	.enrollee {
+		&-heading {
+			&_invalid {
+				height: 6rem;
+			}
+		}
+		&-list {
+			&_box {
+				margin-top: 1rem;
+			}
+		}
+	}
+	.student {
+		&-link {
+			font-size: 2.8rem;
+		}
+		&-sm {
+			&_box {
+				margin-top: 3rem;
+			}
+		}
+	}
+	.gmaps {
+		margin-left: 8rem;
+	}
+	.contacts {
+		&-text {
+			margin-top: 2rem;
+		}
+	}
+}
+@media (max-width: 768px) {
+	.about {
+		&-structure {
+			background-color: @bgcolor;
+			box-shadow: none;
+		}
+		&-documents {
+			background-color: @bgcolor;
+			box-shadow: none;
+			&_btn {
+				&-open {
+					background-color: @main-color;
+				}
+			}
+		}
+	}
+}
 @media (max-width: 576px) {
 	.main {
 		height: 100vh;
@@ -656,25 +868,30 @@ a::-moz-focus-inner {
 		}
 	}
 	.about {
-		&-state {
-			background-color: @main-color;
-			margin: 0;
-			.shadow;
-			color: #fff;
-			&_btn {
-				&-open {
-					margin-bottom: 2rem;
-				}
-			}
-			&_title {
-				margin-top: 2rem;
-			}
+		&-structure {
+			background-color: @bgcolor;
+			box-shadow: none;
 		}
 		&-documents {
-			margin: 0;
+			background-color: @bgcolor;
 			box-shadow: none;
-			background-color: #fff;
-			color: #000;
+			&_btn {
+				&-open {
+					background-color: @main-color;
+				}
+			}
 		}
 	}
+	.student {
+		&-link {
+			font-size: 15px;
+		}
+	}
+	.gmaps {
+		margin: 0;
+		padding-right: 16.4rem;
+	}
+}
+@media (max-width: 450px) {
+
 }
