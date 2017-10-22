@@ -33,13 +33,16 @@ a:focus,
 a:visited,
 a:active {
 	text-decoration: none;
-	border:none  !important;
-    outline:none  !important;
+}
+
+div:focus {
+    outline: none;
 }
 
 button:active, button:focus {
   outline: none !important;
 }
+
 button::-moz-focus-inner {
   border: 0 !important;
 }
@@ -53,7 +56,7 @@ body {
 	background-color: @bgcolor;
 }
 
-// ШАПКА
+// БУРГЕР-МЕНЮ
 .menu {
 	&-link {
 		z-index: 9;
@@ -139,34 +142,6 @@ body {
 	}
 }
 
-/* .header {
-	&-box {
-		z-index: 9;
-		position: fixed;
-		width: 100vw;
-		background-color: @main-color;
-		.shadow;
-		padding-right: 5.8rem;
-	}
-	&-list {
-		margin-top: 1rem;
-	}
-	&-items {
-		display: inline;
-		margin-left: 12px;
-		margin-right: 12px;
-	}
-	&-items a {
-		color: @title-color;
-		transition: all 0.3s;
-		padding-bottom: 1px;
-		&:hover {
-			color: @hover-color;
-			text-decoration: none;
-		}
-	}
-} */
-
 // ГЛАВНАЯ
 .main {
 	height: 100vh;
@@ -175,7 +150,13 @@ body {
 	color: #fff;
 	display: table;
 	width: 100%;
-	 &-container {
+	&-title {
+		animation-duration: 2s;
+	}
+	&-desc {
+		animation-duration: 2s;
+	}
+	&-container {
 		display: table-cell;
 		vertical-align: middle;
 	}
@@ -322,7 +303,7 @@ body {
 	}
 }
 
-// ПРЕПОДАВАТЕЛИ (И РУКОВОДСТВО) !!!
+// ПРЕПОДАВАТЕЛИ (И РУКОВОДСТВО)
 .teachers {
 	&-box {
 		cursor: pointer;
@@ -335,8 +316,6 @@ body {
 	&-img {
 		margin-top: 1rem;
 		padding: 0 5px;
-		min-height: 300px;
-		min-width: 250px;
 		&:hover {
 			background: #fff;
 		}
@@ -354,16 +333,15 @@ body {
 		}
 	}
 	&-slider {
-		max-width: 100vw;
 		margin: 20px auto;
 		padding-bottom: 20px;
 		&_img {
 			text-align: center;
 			width: 100%;
+			min-height: 305px;
 		}
 		&_slide {
-			width: 250px;
-			height: 300px;
+
 			margin-left: 15px;
 			margin-right: 15px;
 		}
@@ -393,7 +371,7 @@ body {
 		text-align: center;
 		color: @title-color;
 	}
-	&-shedule {
+	&-schedule {
 		text-align: center;
 		color: @title-color;
 		&_box {
@@ -617,6 +595,16 @@ body {
 				margin-top: 1rem;
 				margin-bottom: 2rem;
 			}
+			&__close {
+				.btn-mixin;
+				background-color: @bgcolor;
+				&:hover {
+					background-color: @main-color;
+				}
+			}
+		}
+		&_table {
+			margin-left: 3rem;
 		}
 	}
 	&-sm {
@@ -858,7 +846,7 @@ a::-moz-focus-inner {
 	.main {
 		height: 100vh;
 		&-title {
-			font-size: 5rem;
+			font-size: 4.5rem;
 		}
 		&-line {
 			width: 250px;
@@ -882,16 +870,33 @@ a::-moz-focus-inner {
 			}
 		}
 	}
+	.enrollee {
+		&-heading {
+			&_invalid {
+				height: 12rem;
+			}
+		}
+	}
 	.student {
+		&-schedule {
+			margin-top: 3rem;
+		}
 		&-link {
 			font-size: 15px;
+			line-height: 5rem;
+		}
+		&-curator {
+			margin-bottom: 1rem;
+		}
+		&-practice {
+			margin-bottom: 2rem;
+		}
+		&-sm {
+			margin-bottom: 2rem;
 		}
 	}
 	.gmaps {
 		margin: 0;
-		padding-right: 16.4rem;
+		width: 38rem;
 	}
-}
-@media (max-width: 450px) {
-
 }

@@ -9,6 +9,7 @@
 
 	<link rel="shortcut icon" href="img/logo.ico" type="image/x-icon">
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link rel="stylesheet" href="slick/slick.css">
     <link rel="stylesheet" href="slick/slick-theme.css">
@@ -16,24 +17,7 @@
   </head>
   <body>
 
-  	<!-- ШАПКА hidden-xs -->
-
-<!--     <header id="menu">
-		<div class="header-box">
-	    	<div class="container">
-	    		<div class="row text-center">
-			    		<ul class="header-list">
-			    			<li class="header-items"><a href="#main">Главная</a></li>
-			    			<li class="header-items"><a href="#about">О колледже</a></li>
-			    			<li class="header-items"><a href="#activities">Деятельность</a></li>
-			    			<li class="header-items"><a href="#enrollee">Абитуриентам</a></li>
-			    			<li class="header-items"><a href="#student">Студенту</a></li>
-			    			<li class="header-items"><a href="#contacts">Контакты</a></li>
-			    		</ul>
-	    		</div>
-	    	</div>
-		</div>
-    </header> -->
+  	<!-- Бургер-меню -->
     <a href="#menu" class="menu-link">
     	<span></span>
     </a>
@@ -54,9 +38,9 @@
     	<div class="container main-container">
     		<div class="row main-row">
     			<div class="main-content">
-    				<h1 class="main-title">Таврический Колледж</h1>
-    				<div class="main-line"></div>
-    				<h4 class="main-desc">(структурное подразделение ФГАОУ ВО КФУ им. В.И. Вернадского)</h4>
+    				<h1 class="main-title animated fadeIn">Таврический Колледж</h1>
+    				<div class="main-line animated bounceInLeft"></div>
+    				<h4 class="main-desc animated fadeIn">(структурное подразделение ФГАОУ ВО КФУ им. В.И. Вернадского)</h4>
     			</div>
     		</div>
     	</div>
@@ -67,7 +51,7 @@
 		<div class="container">
 			<div class="row">
 				<h1 class="about-title">О колледже</h1>
-				<div class="col-lg-6 col-md-6 col-sm-6 about-structure">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-structure bounceInLeft wow">
 					<h3 class="about-structure_title">Структура</h3>
 					<ul class="about-structure_list">
 						<li class="li">Отделение естественнонаучных и инженерных специальностей</li>
@@ -77,19 +61,19 @@
 					</ul>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6 about-license_box text-center">
-					<h3 class="about-license">Лицензия</h3>
-					<p class="about-license_text">Таврический колледж (структурное подразделение)<br>ФГФОУ ВО «Крымский федеральный университет имени В.И. Вернадского»</p>
-					<a href="http://college.cfuv.ru/wp-content/uploads/2015/10/lizen00.pdf" class="about-license_link">Посмотреть</a>
+					<h3 class="about-license fadeIn wow">Лицензия</h3>
+					<p class="about-license_text fadeIn wow">Таврический колледж (структурное подразделение)<br>ФГФОУ ВО «Крымский федеральный университет имени В.И. Вернадского»</p>
+					<a href="files/about/lizen00.pdf" class="about-license_link" target="_blank">Посмотреть</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-6 col-md-6 col-sm-6 about-state text-center">
-					<h3 class="about-state_title">Положение</h3>
+					<h3 class="about-state_title fadeIn wow">Положение</h3>
 					<button type="button" class="about-state_btn-open" data-toggle="modal" data-target="#state-modal">
 					  Посмотреть
 					</button>
 				</div>
-				<div class="col-lg-6 col-md-6 col-sm-6 about-documents text-center">
+				<div class="col-lg-6 col-md-6 col-sm-6 about-documents bounceInRight wow text-center" data-wow-delay="0.3s">
 					<h3 class="about-documents_title">Документы</h3>
 					<button type="button" class="about-documents_btn-open" data-toggle="modal" data-target="#exampleModalLong">
 					  Открыть список документов
@@ -418,26 +402,27 @@
 	      </div>
 	      <div class="modal-body about-documents_body">
 	      	<ul class="about-documents_list-1">
-		        <li><a href="#">Лицензия на осуществление образовательной деятельности</a></li>
-		        <li><a href="#">Свидетельство о государственной аккредитации образовательной деятельности</a></li>
+		        <li><a href="http://cfuv.ru/ob-universitete/licenziya" target="_blank">Лицензия на осуществление образовательной деятельности</a></li>
+		        <li><a href="http://cfuv.ru/ob-universitete/svidetelstvo-o-gosudarstvennojj-akkreditacii" target="_blank">Свидетельство о государственной аккредитации образовательной деятельности</a></li>
 	        </ul>
 	        <h4>Нормативные документы ФГАОУ ВО «КФУ им. В.И.Вернадского»</h4>
 			<ul class="about-documents_list-2">
-		        <li><a href="#">Положение о Таврическом колледже (структурное подразделение) федерального государственного автономного образовательного учреждения высшего образования «Крымский федеральный университет имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение об организации выполнения и защиты выпускной квалификационной работы в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о практике обучающихся, осваивающих основные профессиональные образовательные программы среднего профессионального образования колледжей ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о Портфолио обучающегося/студента колледжа ФГАОУ ВО «КФУ имени В.И. Вернадского»
+		        <li><a href="files/about/poloj-o-kolleg-44.pdf" target="_blank">Положение о Таврическом колледже (структурное подразделение) федерального государственного автономного образовательного учреждения высшего образования «Крымский федеральный университет имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/poloj-o-diplom-63.pdf" target="_blank">Положение об организации выполнения и защиты выпускной квалификационной работы в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/Polozh-Prakt-62.pdf" target="_blank">Положение о практике обучающихся, осваивающих основные профессиональные образовательные программы среднего профессионального образования колледжей ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/portfolio-studenta61.pdf" target="_blank">Положение о Портфолио обучающегося/студента колледжа ФГАОУ ВО «КФУ имени В.И. Вернадского»
 		        Положение по разработке лабораторных работ и практических занятий в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о Методических комиссиях колледжей ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о внутреннем контроле в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о методической работе в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о самостоятельной работе обучающихся в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о Педагогическом совете в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о Методическом совете в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение об организации учебно-воспитательного процесса в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о порядке перевода, восстановления и отчисления обучающихся в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение об организации и осуществлении образовательной деятельности по образовательным программам среднего профессионального образования в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
-		        <li><a href="#">Положение о формировании основной профессиональной образовательной программы среднего профессионального образования (ОПОП СПО) в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»»</a></li>
+		        <li><a href="files/about/labor-i-prakt-60.pdf" target="_blank">Положение по разработке лабораторных работ и практических занятий в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/metod-komis-55.pdf" target="_blank">Положение о Методических комиссиях колледжей ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/o-vnutr-control-53.pdf" target="_blank">Положение о внутреннем контроле в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/metod-rabota-52.pdf" target="_blank">Положение о методической работе в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/samost-rabote-51.pdf" target="_blank">Положение о самостоятельной работе обучающихся в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/o-ped-sovete-50.pdf" target="_blank">Положение о Педагогическом совете в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/o-metod-sovete-49.pdf" target="_blank">Положение о Методическом совете в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/org-ycheb-vospit-deyat-SPO-48.pdf" target="_blank">Положение об организации учебно-воспитательного процесса в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/poryadok-perevoda-SPO-47.pdf" target="_blank">Положение о порядке перевода, восстановления и отчисления обучающихся в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/org-obraz-deyat-46.pdf" target="_blank">Положение об организации и осуществлении образовательной деятельности по образовательным программам среднего профессионального образования в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»</a></li>
+		        <li><a href="files/about/o-formir-OPOP-45.pdf" target="_blank">Положение о формировании основной профессиональной образовательной программы среднего профессионального образования (ОПОП СПО) в колледжах ФГАОУ ВО «КФУ имени В.И. Вернадского»»</a></li>
 	        </ul>
 	      </div>
 	      <div class="modal-footer">
@@ -451,64 +436,31 @@
 		<div class="leadership-box">
 			<div class="container">
 			<div class="row">
-				<!-- 				<h2 class="leadership-title">Руководство</h2>
-								<div class="col-lg-3 text-center">
-									<div class="teachers-box" data-toggle="modal" data-target="#gavrilenko">
-									<img src="img/teachers/gavrilenko.jpg" alt="Директор" class="teachers-img">
-									<br>
-									<b>Гавриленко <br> Юлия Михайловна</b>
-									<p>Директор</p>
-									</div>
-								</div>
-								<div class="col-lg-3 text-center">
-									<div class="teachers-box" data-toggle="modal" data-target="#shatalina">
-									<img src="img/teachers/shatalina.jpg" alt="Зам. директора" class="teachers-img">
-									<br>
-									<b>Шаталина <br> Елена Фёдоровна</b>
-									<p>Зам. директора</p>
-									</div>
-								</div>
-								<div class="col-lg-3 text-center">
-									<div class="teachers-box" data-toggle="modal" data-target="#kucher">
-									<img src="img/teachers/kucher.jpg" alt="Зам. директора" class="teachers-img">
-									<br>
-									<b>Кучер <br> Лариса Сергеевна</b>
-									<p>Зам. директора</p>
-									</div>
-								</div>
-								<div class="col-lg-3 text-center">
-									<div class="teachers-box" data-toggle="modal" data-target="#maluga">
-									<img src="img/teachers/maluga.png" alt="Зам. директора" class="teachers-img">
-									<br>
-									<b>Малюга <br> Галина Григорьевна</b>
-									<p>Зам. директора</p>
-									</div>
-								</div> -->
 				<h2 class="leadership-title">Руководство</h2>
 				<div class="teachers-slider">
 					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#gavrilenko">
-							<img src="img/teachers/gavrilenko.jpg" alt="" class="teachers-slider_img">
+							<img src="img/teachers/gavrilenko.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.5s" data-wow-duration="0.4s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Гавриленко <br> Юлия Михайловна</b>
 								<p class="teachers-slider_desc">Директор</p>
 							</div>
 						</div>
 					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#shatalina">
-							<img src="img/teachers/shatalina.jpg" alt="" class="teachers-slider_img">
+							<img src="img/teachers/shatalina.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.6s" data-wow-duration="0.5s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Шаталина <br> Елена Фёдоровна</b>
 								<p class="teachers-slider_desc">Зам. директора</p>
 							</div>
 						</div>
 					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#kucher">
-							<img src="img/teachers/kucher.jpg" alt="" class="teachers-slider_img">
+							<img src="img/teachers/kucher.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.7s" data-wow-duration="0.6s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Кучер <br> Лариса Сергеевна</b>
 								<p class="teachers-slider_desc">Зам. директора</p>
 							</div>
 						</div>
 					<div class="teachers-slider_slide teachers-box" data-toggle="modal" data-target="#maluga">
-							<img src="img/teachers/maluga.png" alt="" class="teachers-slider_img">
+							<img src="img/teachers/maluga.png" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.8s" data-wow-duration="0.7s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Малюга <br> Галина Григорьевна</b>
 								<p class="teachers-slider_desc">Зам. директора</p>
@@ -534,7 +486,6 @@
 	      </div>
 	      <div class="modal-body">
 				<div class="col-lg-12">
-	      		<img src="img/teachers/gavrilenko.jpg" alt="" class="modal_img">
 		      		<p class="modal_text">
 		      					      			Дата рождения: 17.04.1961 г.
 		      			<br><br>
@@ -580,7 +531,6 @@
 	      </div>
 	      <div class="modal-body">
 				<div class="col-lg-12">
-	      		<img src="img/teachers/shatalina.jpg" alt="" class="modal_img">
 		      		<p>
 						Дата рождения: 14.09.1964 г.
 					<br><br>
@@ -619,7 +569,6 @@
 	      </div>
 	      <div class="modal-body">
 	      					<div class="col-lg-12">
-	      		      		<img src="img/teachers/kucher.jpg" alt="" class="modal_img">
 	      			      		<p>
 	      			      			Дата рождения: 27 июля 1950г.
 	      	<br><br>
@@ -638,8 +587,6 @@
 	      			      			Данные о повышении квалификации: ФГБОУ ВПО по программе: «Управление государственными профессиональными образовательными организациями в условиях проведения реформ бюджетного процесса (2014г.)
 	      	<br><br>
 	      			      			Участие в научных, учебно-методических мероприятиях – Систематически участвующий в региональных и межрегиональных научно-практических конференциях, семинарах, заседаниях методических объединений преподавателей СПО.
-	      	<br><br>
-	      			      			Контактная информация: +79788505608
 	      				        </p>
 	      				    </div>
 	      </div>
@@ -662,7 +609,6 @@
 	      </div>
 	      <div class="modal-body">
 	      		      					<div class="col-lg-12">
-	      		      		      		<img src="img/teachers/maluga.png" alt="" class="modal_img">
 	      		      			      		<p>
 	      		      			      			Дата рождения: 20 мая 1961 г.
 	      	<br><br>
@@ -677,10 +623,6 @@
 	      		      			      			Сфера профессиональных интересов: квалификация «Биолог. Преподаватель биологии и химии».
 	      	<br><br>
 	      		      			      			Педагогическая деятельность: преподаватель курса « Естествознание» и «Управление персоналом химических лабораторий».
-	      	<br><br>
-	      		      			      			Контактная информация:
-	      	<br><br>
-	      		      			      			E-mail: galina_malyuga@mail.ru
 	      		      				        </p>
 	      		      				    </div>
 	      </div>
@@ -697,252 +639,252 @@
 			<div class="row">
 				<h2 class="teachers-title">Преподаватели</h2>
 				<div class="teachers-slider">
-					<div class="teachers-slider_slide teachers-box">
-							<img src="img/teachers/zheleznyak1.jpg" alt="" class="teachers-slider_img">
+					<div class="teachers-slider_slide ">
+							<img src="img/teachers/zheleznyak1.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.5s" data-wow-duration="0.4s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Железняк<br> Александр Владимирович</b>
 								<p class="teachers-slider_desc">Основы программирования</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
-							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img">
+					<div class="teachers-slider_slide ">
+							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.6s" data-wow-duration="0.5s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Горащук <br>Ольга Сергеевна</b>
 								<p class="teachers-slider_desc">Русский язык и литература</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
-							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img">
+					<div class="teachers-slider_slide ">
+							<img src="img/teachers/belenkayaa.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.7s" data-wow-duration="0.6s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Беленькая <br>Анна Сергеевна</b>
 								<p class="teachers-slider_desc">Основы философии</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
-							<img src="img/teachers/kondratenko1.jpg" alt="" class="teachers-slider_img">
+					<div class="teachers-slider_slide ">
+							<img src="img/teachers/kondratenko1.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.8s" data-wow-duration="0.7s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Кондратенко <br>Елизавета Александровна</b>
 								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
-							<img src="img/teachers/kucher-d1.jpg" alt="" class="teachers-slider_img">
+					<div class="teachers-slider_slide ">
+							<img src="img/teachers/kucher-d1.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.9s" data-wow-duration="0.8s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Кучер <br>Дмитрий Александрович</b>
 								<p class="teachers-slider_desc">Биология</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Borodina.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Бородина <br>Кира Аркадьевна</b>
 								<p class="teachers-slider_desc">Физкультура</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/solovyev.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Соловьев <br>Валерий Иванович</b>
 								<p class="teachers-slider_desc">Основы электротехники</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/luneva1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Лунева <br>Виктория Ивановна</b>
 								<p class="teachers-slider_desc">История</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/starostin1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Старостин <br>Виталий Анатольевич</b>
 								<p class="teachers-slider_desc">ОБЖ</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/lavrova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Лаврова <br>Ксения Викторовна</b>
 								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/vlasova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Власова <br>Анна Николаевна</b>
 								<p class="teachers-slider_desc">ИКТ</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/gymaltdinova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Гималетдинова <br>Любовь Александровна</b>
 								<p class="teachers-slider_desc">Математика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/tixonravova1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Тихонравова <br>Наталья Владиславовна</b>
 								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/sherekina1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Шерекина <br>Светлана Юрьевна</b>
 								<p class="teachers-slider_desc">География</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/bobkova.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Бобкова <br>Людмила Николаевна</b>
 								<p class="teachers-slider_desc">Литература</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/bogoslavskaya.png" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Богославская <br>Екатерина Игоревна</b>
 								<p class="teachers-slider_desc">Право</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/belenkaya1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Беленькая <br>Ева Робертовна</b>
 								<p class="teachers-slider_desc">Аналитическая химия</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
-							<img src="img/teachers/gorashuk1.jpg" alt="" class="teachers-slider_img">
+					<div class="teachers-slider_slide ">
+							<img src="img/teachers/poduretc1.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Подурец <br>Антон Владимирович</b>
 								<p class="teachers-slider_desc">Экономика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/maluga.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Малюга <br>Полина Александровна</b>
 								<p class="teachers-slider_desc">Маркетинг</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Mordvinov-200x300.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Мордвинов <br>Вилен Евгеньевич</b>
 								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Klochkova-200x300.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Клочкова <br>Галина Анатольевна</b>
 								<p class="teachers-slider_desc">Химия</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Melentsova.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Меленцова <br>Наталья Витальевна</b>
 								<p class="teachers-slider_desc">Иностранный язык</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/nelina.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Нелина <br>Нина Игоревна</b>
 								<p class="teachers-slider_desc">Основы полиграфического производства</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Mihlina0.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Михлина <br>Ольга Васильвна</b>
 								<p class="teachers-slider_desc">История</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/madrik.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Мадрик <br>Анжела Игоревна</b>
 								<p class="teachers-slider_desc">Математика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/kokoshkina.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Кокошкина <br>Вера Анатольевна</b>
 								<p class="teachers-slider_desc">Дизайн</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/rush.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Рюш <br>Ирина Олеговна</b>
 								<p class="teachers-slider_desc">Экология</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/andreichuk-200x300.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Андрейчук <br>Анна Михайловна</b>
 								<p class="teachers-slider_desc">Прикладная информатика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/careva.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Царёва <br>Наталья Олеговна</b>
 								<p class="teachers-slider_desc">Физкультура</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/chudinovich.png" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Чудинович <br>Людмила Михайловна</b>
 								<p class="teachers-slider_desc">Экономика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Fedyaev.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Федяев <br>Мирослав Иванович</b>
 								<p class="teachers-slider_desc">Обществознание</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/tsikunov.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Цыкунов <br>Иван Александрович</b>
 								<p class="teachers-slider_desc">Экономика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/Smirnova.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Смирнова <br>Евгения Валерьевна</b>
 								<p class="teachers-slider_desc">Математика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/fandaeeva.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Фандеева <br>Оксана Николаевна</b>
 								<p class="teachers-slider_desc">Математика</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/rudniktskaya.jpg" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Рудницкая <br>Елена Степановна</b>
 								<p class="teachers-slider_desc">Русский язык</p>
 							</div>
 						</div>
-					<div class="teachers-slider_slide teachers-box">
+					<div class="teachers-slider_slide ">
 							<img src="img/teachers/cheporova.png" alt="" class="teachers-slider_img">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Чепорова <br>Галина Евгеньевна</b>
@@ -961,7 +903,7 @@
 				<h1 class="activities-title">Деятельность</h1>
 				<div class="col-lg-6 col-md-6">
 					<h3 class="activities-main">Основные профессиональные образовательные программы</h3>
-					<ul class="activities-list">
+					<ul class="activities-list fadeIn wow">
 						<li class="activities-items">Образовательная программа 09.02.01 Компьютерные системы и комплексы</li>
 						<li class="activities-items">Образовательная программа 09.02.03 Программирование в компьютерных системах</li>
 						<li class="activities-items">Образовательная программа 18.02.01 Аналитический контроль качества химических соединений</li>
@@ -973,32 +915,32 @@
 						<li class="activities-items">Образовательная программа 54.02.01 Дизайн</li>
 					</ul>
 				</div>
-				<div class="col-lg-6 col-md-6 activities-shedule_box">
-					<h3 class="activities-shedule">Графики учебного процесса</h3>
+				<div class="col-lg-6 col-md-6 activities-schedule_box bounceInRight wow">
+					<h3 class="activities-schedule">Графики учебного процесса</h3>
 					<ul class="activities-list">
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 09.02.01 Компьютерные системы и комплексы</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 09.02.03 Программирование в компьютерных системах</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 18.02.01 Аналитический контроль качества химических соединений</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 29.02.06 Полиграфическое производство</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 38.02.03 Операционная деятельность в логистике</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 38.02.06 Финансы</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 42.02.02 Издательское дело</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">График учебного процесса по специальности 43.02.10 Туризм</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">Образовательная программа 54.02.01 Дизайн</a></li>
+						<li class="activities-items"><a href="files/activities/090201-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 09.02.01 Компьютерные системы и комплексы</a></li>
+						<li class="activities-items"><a href="files/activities/090203-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 09.02.03 Программирование в компьютерных системах</a></li>
+						<li class="activities-items"><a href="files/activities/180201-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 18.02.01 Аналитический контроль качества химических соединений</a></li>
+						<li class="activities-items"><a href="files/activities/290206-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 29.02.06 Полиграфическое производство</a></li>
+						<li class="activities-items"><a href="files/activities/380203-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 38.02.03 Операционная деятельность в логистике</a></li>
+						<li class="activities-items"><a href="files/activities/380206-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 38.02.06 Финансы</a></li>
+						<li class="activities-items"><a href="files/activities/420202-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 42.02.02 Издательское дело</a></li>
+						<li class="activities-items"><a href="files/activities/430210-kug-2017-o.pdf" target="_blank" class="activities-links">График учебного процесса по специальности 43.02.10 Туризм</a></li>
+						<li class="activities-items"><a href="files/activities/540201-kug-2017-o-2.pdf" target="_blank" class="activities-links">Образовательная программа 54.02.01 Дизайн</a></li>
 					</ul>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6 col-md-6 activities-reports_box">
+				<div class="col-lg-6 col-md-6 activities-reports_box bounceInLeft wow" data-wow-delay="0.3s">
 					<h3 class="activities-reports">Отчёты</h3>
 					<ul class="activities-list">
-						<li class="activities-items"><a href="#" class="activities-links">Отчет о работе методического кабинета в 2016-2017 учебном году</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">Отчет о проведении II этапа Всероссийской олимпиады профессионального мастерства в 2017 году</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">Отчет о работе по вопросам профессиональной ориентации и довузовской подготовки за 2016-2017 учебный год</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">Отчет о научно-исследовательской деятельности</a></li>
+						<li class="activities-items"><a href="files/activities/otch_metod_-2016-2017.pdf" target="_blank" class="activities-links">Отчет о работе методического кабинета в 2016-2017 учебном году</a></li>
+						<li class="activities-items"><a href="files/activities/otchett1.pdf" target="_blank" class="activities-links">Отчет о проведении II этапа Всероссийской олимпиады профессионального мастерства в 2017 году</a></li>
+						<li class="activities-items"><a href="files/activities/otchet.pdf" target="_blank" class="activities-links">Отчет о работе по вопросам профессиональной ориентации и довузовской подготовки за 2016-2017 учебный год</a></li>
+						<li class="activities-items"><a href="files/activities/nid.pptx" target="_blank" class="activities-links">Отчет о научно-исследовательской деятельности</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-6 col-md-6">
+				<div class="col-lg-6 col-md-6 fadeIn wow" data-wow-duration="0.2s">
 					<h3 class="activities-programs">Программы учебных дисциплин</h3>
 					<ul class="activites-list">
 						<li class="activities-items">Программа учебной дисциплины № 1</li>
@@ -1009,7 +951,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-6 col-md-6">
+				<div class="col-lg-6 col-md-6 fadeIn wow" data-wow-duration="0.3s">
 					<h3 class="activities-scroll">Перечень направлений подготовки, специальностей</h3>
 					<ul class="activities-list">
 						<li class="activities-items"><b>09.02.01
@@ -1026,18 +968,18 @@
 							Туризм</b> – срок обучения в колледже 3 года 10 мес., по окончанию учебы присваивается квалификация «Специалист по туризму»</li>
 					</ul>
 				</div>
-				<div class="col-lg-6 col-md-6 activities-standarts_box">
+				<div class="col-lg-6 col-md-6 activities-standarts_box bounceInRight wow" data-wow-delay="0.4s">
 					<h3 class="activities-standarts">Образовательные стандарты</h3>
 					<ul class="activities-list">
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 09.02.01 Компьютерные системы и комплексы</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 09.02.03 Программирование в компьютерных системах</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 18.02.01 Аналитический контроль качества химических соединений</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 29.02.06 Полиграфическое производство</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 38.02.03 Операционная деятельность в логистике</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 38.02.06 Финансы</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 42.02.02 Издательское дело</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 43.02.10 Туризм</a></li>
-						<li class="activities-items"><a href="#" class="activities-links">ФГОС СПО 54.02.01 Дизайн</a></li>
+						<li class="activities-items"><a href="files/activities/fgos09-02-01.pdf" target="_blank" class="activities-links">ФГОС СПО 09.02.01 Компьютерные системы и комплексы</a></li>
+						<li class="activities-items"><a href="files/activities/fgos09-02-03.pdf" target="_blank" class="activities-links">ФГОС СПО 09.02.03 Программирование в компьютерных системах</a></li>
+						<li class="activities-items"><a href="files/activities/fgos18-02-01.pdf" target="_blank" class="activities-links">ФГОС СПО 18.02.01 Аналитический контроль качества химических соединений</a></li>
+						<li class="activities-items"><a href="files/activities/fgos29-02-06.pdf" target="_blank" class="activities-links">ФГОС СПО 29.02.06 Полиграфическое производство</a></li>
+						<li class="activities-items"><a href="files/activities/fgos38-02-03.pdf" target="_blank" class="activities-links">ФГОС СПО 38.02.03 Операционная деятельность в логистике</a></li>
+						<li class="activities-items"><a href="files/activities/fgos38-02-06.pdf" target="_blank" class="activities-links">ФГОС СПО 38.02.06 Финансы</a></li>
+						<li class="activities-items"><a href="files/activities/fgos42-02-02.pdf" target="_blank" class="activities-links">ФГОС СПО 42.02.02 Издательское дело</a></li>
+						<li class="activities-items"><a href="files/activities/fgos43-02-10.pdf" target="_blank" class="activities-links">ФГОС СПО 43.02.10 Туризм</a></li>
+						<li class="activities-items"><a href="files/activities/fgos54-02-01.pdf" target="_blank" class="activities-links">ФГОС СПО 54.02.01 Дизайн</a></li>
 					</ul>
 				</div>
 			</div>
@@ -1046,12 +988,12 @@
 
 	<!-- АБИТУРИЕНТАМ -->
 	<section class="enrollee" id="enrollee">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<h1 class="enrollee-title__main">Абитуриентам</h1>
 				<div class="enrollee-group" id="accordion" role="tablist" aria-multiselectable="true">
 				  <div class="enrollee-main">
-				      <div class="enrollee-heading" role="tab" id="headingOne">
+				      <div class="enrollee-heading fadeInUp wow" role="tab" id="headingOne">
 				        <h4 class="enrollee-title">
 				          <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 				            Порядок приёма
@@ -1298,7 +1240,7 @@
 				      </div>
 				  </div>
 			  <div class="enrollee-main">
-			    <div class="enrollee-heading" role="tab" id="headingTwo">
+			    <div class="enrollee-heading fadeInUp wow" data-wow-delay="0.2s" role="tab" id="headingTwo">
 			      <h4 class="enrollee-title">
 			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
 			          Правила приёма
@@ -1905,7 +1847,7 @@
 			    </div>
 			  </div>
 				  <div class="enrollee-main">
-				    <div class="enrollee-heading enrollee-heading_invalid" role="tab" id="headingThree">
+				    <div class="enrollee-heading enrollee-heading_invalid fadeInUp wow" data-wow-delay="0.3s" role="tab" id="headingThree">
 				      <h4 class="enrollee-title">
 				        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
 				          Особенности проведения вступительных испытаний для лиц с ограниченными возможностями здоровья
@@ -1948,15 +1890,15 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<h3 class="enrollee-cost enrollee-cost_1">Стоимость обучения</h3>
+					<h3 class="enrollee-cost enrollee-cost_1 fadeIn wow">Стоимость обучения</h3>
 					<a href="http://college.cfuv.ru/wp-content/uploads/2015/10/stoim-2017.pdf" class="enrollee-cost_btn">Посмотреть</a>
 				</div>
-				<div class="col-lg-4 col-md-4 col-sm-12 enrollee-list_box">
+				<div class="col-lg-4 col-md-4 col-sm-12 enrollee-list_box bounceInUp wow" data-wow-delay="0.4s">
 					<h3 class="enrollee-list">Списки абитуриентов, подавших документы</h3>
 					<a href="http://abitur.cfuv.ru/abitur/srednee-professionalnoe-obrazovanie/rejjtingovye-spiski-abiturientov-podavshikh-dokumenty-po-napravleniyu-podgotovki-srednego-professionalnogo-obrazovaniya/tavricheskijj-kolledzh" class="enrollee-list_btn">Посмотреть</a>
 				</div>
 				<div class="col-lg-4 col-md-4 col-sm-12">
-					<h3 class="enrollee-cost enrollee-method">Методическое обеспечение дисциплин</h3>
+					<h3 class="enrollee-cost enrollee-method fadeIn wow">Методическое обеспечение дисциплин</h3>
 					<a href="http://college.cfuv.ru/wp-content/uploads/2017/05/Metod-VKR.pdf" class="enrollee-cost_btn">Посмотреть</a>
 				</div>
 			</div>
@@ -2047,49 +1989,460 @@
 			<div class="row student-row_1">
 				<h1 class="student-title">Студенту</h1>
 				<h2 class="student-schedule">Расписание</h2>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box bounceInUp wow">
 					<a href="files/1.pdf" class="student-link">1 курс</a>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box bounceInUp wow" data-wow-delay="0.2s">
 					<a href="files/1.pdf" class="student-link">2 курс</a>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box bounceInUp wow" data-wow-delay="0.3s">
 					<a href="files/1.pdf" class="student-link">3 курс</a>
 				</div>
-				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box">
+				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 text-center student-link_box bounceInUp wow" data-wow-delay="0.4s">
 					<a href="files/1.pdf" class="student-link">4 курс</a>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-3 col-md-6 col-sm-12 student-curator_box text-center">
+				<div class="col-lg-3 col-md-6 col-sm-12 student-curator_box text-center fadeInUp wow">
 					<h3 class="student-curator">Кураторы групп</h3>
-					<button class="student-curator_btn__open">Посмотреть</button>
+					<button class="student-curator_btn__open" data-toggle="modal" data-target="#curator-modal">Посмотреть</button>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-12">
 					<h3 class="student-practice">Графики практик</h3>
-					<ul class="student-list">
-						<li class="student-items"><a href="#" target="_blank">График практик Отделения естественнонаучных и инженерных специальностей на 2017-2018 учебный год</a></li>
-						<li class="student-items"><a href="#" target="_blank">График практик Отделения информационных технологий на 2017-2018 учебный год</a></li>
-						<li class="student-items"><a href="#" target="_blank">График практики Отделения издательско-полиграфических дисциплин на 2017-2018 учебный год</a></li>
-						<li class="student-items"><a href="#" target="_blank">График практики Отделения сферы обслуживания, менеджмента и финансов на 2017-2018 учебный год</a></li>
+					<ul class="student-list fadeIn wow">
+						<li class="student-items"><a href="files/student/eniis.pdf" target="_blank">График практик Отделения естественнонаучных и инженерных специальностей на 2017-2018 учебный год</a></li>
+						<li class="student-items"><a href="files/student/it.pdf" target="_blank">График практик Отделения информационных технологий на 2017-2018 учебный год</a></li>
+						<li class="student-items"><a href="files/student/ipd.pdf" target="_blank">График практики Отделения издательско-полиграфических дисциплин на 2017-2018 учебный год</a></li>
+						<li class="student-items"><a href="files/student/obsl.pdf" target="_blank">График практики Отделения сферы обслуживания, менеджмента и финансов на 2017-2018 учебный год</a></li>
 					</ul>
 				</div>
-				<div class="col-lg-3 col-md-6 col-sm-12 student-sm_box text-center">
+				<div class="col-lg-3 col-md-6 col-sm-12 student-sm_box text-center fadeInUp wow">
 					<h3 class="student-sm">Студенческое самоуправление</h3>
-					<button class="student-sm_btn__open">Посмотреть</button>
+					<button class="student-sm_btn__open" data-toggle="modal" data-target="#sm-modal">Посмотреть</button>
 				</div>
 			</div>
 		</div>
 	</section>
 
+	<!-- Кураторы групп -->
+	<div class="modal fade" id="curator-modal" tabindex="-1" role="dialog" aria-labelledby="curator-modal_label" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h3 class="modal-title" id="curator-modal_label">Кураторы групп</h3>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <table class="aligncenter student-curator_table" style="width: 90%;" cellspacing="0" cellpadding="10" border="1">
+	        <tbody>
+	        <tr>
+	        <td style="width: 177px; text-align: center;" width="177"><strong>Группа</strong></td>
+	        <td style="width: 406px; text-align: center;" width="406"><strong>ФИО Куратора</strong></td>
+	        </tr>
+	        <tr>
+	        <td style="width: 584px; text-align: center;" colspan="2" width="584"><strong>1 курс</strong></td>
+	        </tr>
+	        <tr>
+	        <td width="177">1Т11</td>
+	        <td width="406">Шерекина Светлана Юрьевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1Т12</td>
+	        <td width="406">Рудницкая Елена Степановна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1ПКС11</td>
+	        <td width="406">Смирнова Евгения Валериевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1ПКС12</td>
+	        <td width="406">Фандеева Оксана Николаевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1КСК10</td>
+	        <td width="406">Мандрик Анжела Игоревна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1КСК11</td>
+	        <td width="406">Соловьев Валерий Иванович</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1Ф7</td>
+	        <td width="406">Чепорова Галина Евгеньевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1ОДЛ7</td>
+	        <td width="406">Мизерак Марина Васильевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1АК7</td>
+	        <td width="406">Тихонравова Н.В.</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1ИД</td>
+	        <td width="406">Попова Елена Альбертовна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">1Д</td>
+	        <td width="406">Снатович Анжелика Богдановна</td>
+	        </tr>
+	        <tr>
+	        <td style="width: 584px; text-align: center;" colspan="2" width="584"><strong>2 Курс</strong></td>
+	        </tr>
+	        <tr>
+	        <td width="177">2КСК8</td>
+	        <td width="406">Железняк Александр Владимирович</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2КСК9</td>
+	        <td width="406">Гималетдинова Любовь Александровна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2ПКС9</td>
+	        <td width="406">Федяев Мирослав Иванович</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2ПКС10</td>
+	        <td width="406">Пермякова Полина Викторовна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2АК5</td>
+	        <td width="406">Старостин Виталий Анатольевич</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2АК6</td>
+	        <td width="406">Притуленко Андрей Сергеевич</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2Ф6</td>
+	        <td width="406">Лунёва Виктория Ивановна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2Т9</td>
+	        <td width="406">Кучер Дмитрий Александрович</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2Т10</td>
+	        <td width="406">Богославская Екатерина Игоревна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">ПП</td>
+	        <td width="406">Чудинович Людмила Михайловна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">ИД</td>
+	        <td width="406">Бобкова Людмила Николаевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">2Д</td>
+	        <td width="406">Кокошкина Вера Анатольевна</td>
+	        </tr>
+	        <tr>
+	        <td style="width: 584px; text-align: center;" colspan="2" width="584"><strong>3 Курс</strong></td>
+	        </tr>
+	        <tr>
+	        <td width="177">3КСК7</td>
+	        <td width="406">Малюга Галина Григорьевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3ПКС7</td>
+	        <td width="406">Горащук Ольга Сергеевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3АК4</td>
+	        <td width="406">Рюш Ирина Олеговна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3ОДЛ4</td>
+	        <td width="406">Подурец Антон Владимирович</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3Ф5</td>
+	        <td width="406">Малюга Полина Александровна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3Т7</td>
+	        <td width="406">Кондратенко Елизавета Александровна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3Т8</td>
+	        <td width="406">Беленькая Ева Робертовна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3ПП</td>
+	        <td width="406">Нелина Нина Григорьевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">3Д</td>
+	        <td width="406">Меленцова Наталья Витальевна</td>
+	        </tr>
+	        <tr>
+	        <td style="width: 584px; text-align: center;" colspan="2" width="584"><strong>4 Курс</strong></td>
+	        </tr>
+	        <tr>
+	        <td width="177">4АК3</td>
+	        <td width="406">Рюш Ирина Олеговна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">4Т5</td>
+	        <td width="406">Власова Анна Николаевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">4Т6</td>
+	        <td width="406">Лаврова Ксения Викторовна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">4ПП</td>
+	        <td width="406">Клочкова Галина Анатольевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">4ИД</td>
+	        <td width="406">Клочкова Галина Анатольевна</td>
+	        </tr>
+	        <tr>
+	        <td width="177">4Д</td>
+	        <td width="406">Левина Ольга Александровна</td>
+	        </tr>
+	        </tbody>
+	        </table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="student-curator_btn__close" data-dismiss="modal">Закрыть</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Студенческое самоуправление -->
+	<div class="modal fade" id="sm-modal" tabindex="-1" role="dialog" aria-labelledby="sm-label" aria-hidden="true">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h3 class="modal-title" id="sm-label">Студенческое самоуправление</h3>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+    		    Председатель студенческого самоуправления — <b>Хурс Анна</b>
+    		    <br>
+    		    Глава Студенческого самоуправления – <b>Анастасия Кричевская</b>
+    		    <br><br>
+
+    		    <p class="enrollee-order_text">Студенческое самоуправление – форма управления, предполагающая активное участие студентов в подготовке, принятии и реализации управленческих решений, касающихся жизнедеятельности высшего учебного заведения или его отдельных подразделений, защите прав и интересов обучающихся, включение студентов в различные виды социально значимой деятельности.
+    			<br><br>
+    		    Студенческое самоуправление — форма участия студентов в жизни университета, города и области.
+    			<br><br>
+    		    На современном этапе развития общества неуклонно возрастает общественная активность студенческой молодежи. И, прежде всего, она выражается в развитии студенческого движения. Это происходит по той причине, что студенты все больше чувствуют необходимость объединения для реализации собственных интересов и потребностей, защиты своих прав.
+    			<br><br>
+    		    Наиболее лучшим образом социальному развитию личности студента способствует коллективная самоорганизация студенческой среды, одним из наиболее ярких проявлений которой выступает студенческое самоуправление.</p>
+
+    		    <p class="enrollee-order_text__1">Основные вопросы деятельности профкома студентов, профбюро факультетов</p>
+
+    		    <p class="enrollee-order_text"><b>1. Правовая защита студентов</b></p>
+
+    		    <p class="enrollee-order_text"><b>2. Оказание материальной помощи</b></p>
+    			<ul>
+    		    <li>студентам из многодетных семей, имеющим детей, из неполных семей, студентам-сиротам, чернобыльцам, малообеспеченным и т.д. Материальная помощь выдается по решению профбюро факультетов, профкома.</li>
+    			</ul>
+    		    <p class="enrollee-order_text"><b>3. Оздоровление, отдых студентов</b></p>
+    			<ul>
+    		    <li>организация поездок в период каникул в санаторий «Прометей» (г. Алушта), на базу отдыха «Учитель» (г. Ялта)</li>
+    			</ul>
+    		    <p class="enrollee-order_text"><b>4. Организация досуга, культурных мероприятий факультетов</b></p>
+    			<ul>
+    		    <li>организация, проведение, финансирование факультетских традиционных мероприятий: День факультета, КВН, Новый год, День первокурсника, Экватор, выпускной вечер, Юморина, конкурс авторской песни и пр.</li>
+    			</ul>
+    		    <p class="enrollee-order_text"><b>5. Спортивно-массовая работа</b></p>
+    			<ul>
+    		    <li>участие в организации, проведении, финансировании университетских спортивных мероприятий: соревнований по баскетболу, волейболу, мини- футболу, легкой атлетике, теннису.</li>
+    			</ul>
+    		    <p class="enrollee-order_text"><b>6. Для проживающих в общежитии</b></p>
+    			<ul>
+    		    <li>участие в поселении в общежитие;</li>
+    		    <li>решение спорных вопросов, конфликтов, согласование выселения из общежития;</li>
+    			</ul>
+    		    <p class="enrollee-order_text"><b>7. Поощрение студентов</b></p>
+    			<ul>
+    		    <li>премирование студентов за высокие достижения в учебной и научной деятельности, спорте, участие в культурной жизни академии, активную общественную работу.</li>
+    			</ul>
+    		    <p class="enrollee-order_text"><b>По указанным вопросам член профсоюза может обратиться к профоргу курса, председателю профбюро факультета, в случае не решения вопроса — в профком студентов.</b></p>
+
+    		    <table class="aligncenter student-curator_table" style="width: 90%;" cellspacing="0" cellpadding="5" border="1">
+    		    <tbody>
+    		    <tr>
+    		    <td style="width: 767px; text-align: center;" colspan="3"><strong>1 Курс</strong></td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1Д4</td>
+    		    <td style="width: 646px;" colspan="2">Чижик Марина</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1ИД2</td>
+    		    <td style="width: 646px;" colspan="2">Балясная Регина</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1АК7</td>
+    		    <td style="width: 646px;" colspan="2">Ванглер Екатерина</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1КСК10</td>
+    		    <td style="width: 646px;" colspan="2">Комличенко Владимир</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1КСК11</td>
+    		    <td style="width: 646px;" colspan="2">Карый Богдан</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1ПКС11</td>
+    		    <td style="width: 646px;" colspan="2">Артюгина София</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1ПКС12</td>
+    		    <td style="width: 646px;" colspan="2">Злобина Лиля</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1Т11</td>
+    		    <td style="width: 646px;" colspan="2">Асанова Альбина</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1Т12</td>
+    		    <td style="width: 646px;" colspan="2">Васильева&nbsp; Яна</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1Ф7</td>
+    		    <td style="width: 646px;" colspan="2">Шейх-Заде Камилла</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">1ОДЛ7</td>
+    		    <td style="width: 646px;" colspan="2">Трушина Ирина</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 767px; text-align: center;" colspan="3"><strong>2 Курс</strong></td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2Т9</td>
+    		    <td style="width: 646px;" colspan="2">Хурс Анна</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2Т10</td>
+    		    <td style="width: 646px;" colspan="2">Бабкина Дарья</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2ПКС10</td>
+    		    <td style="width: 646px;" colspan="2">АбаеваЭльмаз</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2ПКС9</td>
+    		    <td style="width: 646px;" colspan="2">Бургун Никита</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2Ф6</td>
+    		    <td style="width: 646px;" colspan="2">Кадырова Зейнеб</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2ОДЛ6</td>
+    		    <td style="width: 646px;" colspan="2">АбляевЭмин</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2АК5</td>
+    		    <td style="width: 646px;" colspan="2">Беличенко Анастасия</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2АК6</td>
+    		    <td style="width: 646px;" colspan="2">Чабанко Игорь</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2ИД</td>
+    		    <td style="width: 646px;" colspan="2">Мищенко Алиса</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2Д3</td>
+    		    <td style="width: 646px;" colspan="2">Кулакова Анна</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">2ПП3</td>
+    		    <td style="width: 646px;" colspan="2">Здыбель Надежда</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 767px; text-align: center;" colspan="3"><strong>3 Курс</strong></td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3Т7</td>
+    		    <td style="width: 646px;" colspan="2">Самохина Анастасия</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3Т8</td>
+    		    <td style="width: 646px;" colspan="2">Старостина Вера</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3ОДЛ4</td>
+    		    <td style="width: 646px;" colspan="2">Чепелева Елена</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3ОДЛ5</td>
+    		    <td style="width: 646px;" colspan="2">Юрченко Анастасия</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3Ф5</td>
+    		    <td style="width: 646px;" colspan="2">Волков Станислав</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3ПКС8</td>
+    		    <td style="width: 646px;" colspan="2">Коваленко Дмитрий</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3АК4</td>
+    		    <td style="width: 646px;" colspan="2">Лазебная Ангелина</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3КСК7</td>
+    		    <td style="width: 646px;" colspan="2">Тарасюк Владислав</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3Д2</td>
+    		    <td style="width: 646px;" colspan="2">Зубко Денис</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 121px;">3ПП2</td>
+    		    <td style="width: 646px;" colspan="2">Скиба Татьяна</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 767px; text-align: center;" colspan="3"><strong>4 Курс</strong></td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 250px;" colspan="2">4АК3</td>
+    		    <td style="width: 517px;">МуртазаеваЗарема</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 250px;" colspan="2">4ПП</td>
+    		    <td style="width: 517px;">Абернихина Анастасия</td>
+    		    </tr>
+    		    <tr>
+    		    <td style="width: 250px;" colspan="2">4Д</td>
+    		    <td style="width: 517px;">Донскова Эмилия</td>
+    		    </tr>
+    		    </tbody>
+    		    </table>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="student-curator_btn__close" data-dismiss="modal">Закрыть</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- КОНТАКТЫ -->
 	<footer id="contacts">
 		<div class="container">
 			<div class="row">
 				<h1 class="contacts-title">Контакты</h1>
-				<div class="col-lg-6 col-md-7 col-sm-12">
+				<div class="col-lg-6 col-md-7 col-sm-12 fadeIn wow">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.4398627671603!2d34.090875392496464!3d44.97537488858594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd89b3bd2b8b%3A0x637dc7e218971780!2zMTE2INGD0LsuINCa0LjQtdCy0YHQutCw0Y8sINCh0LjQvNGE0LXRgNC-0L_QvtC70Yw!5e0!3m2!1sru!2s!4v1508361424511" width="550" height="300" frameborder="0" style="border:0" allowfullscreen class="gmaps"></iframe>
 				</div>
-				<div class="col-lg-6 col-md-5 col-sm-12">
+				<div class="col-lg-6 col-md-5 col-sm-12 fadeIn wow" data-wow-delay="0.2s">
 					<p class="contacts-text"><b>Таврический колледж</b> (структурное подразделение) федерального государственного автономного образовательного учреждения высшего образования «Крымский федеральный университет имени В.И. Вернадского».<br><br>
 					<b>Директор:</b> Гавриленко Юлия Михайловна<br><br>
 					<b>Адрес:</b> 295034, Республика Крым, г. Симферополь, ул. Киевская, 116-б<br><br>
@@ -2163,7 +2516,9 @@
 	</script>
     <script src="js/parallax.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+    	new WOW().init();
+    </script>
   </body>
 </html>
-
-<!-- AIzaSyAO7Ho8GWEUSiIPQEj-G6T_LZsUjY7hCGw -->
