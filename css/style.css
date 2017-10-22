@@ -792,6 +792,11 @@ a::-moz-focus-inner {
     margin: 0;
   }
 }
+@media (max-width: 1024px) {
+  .teachers-slider_img {
+    min-height: 200px;
+  }
+}
 @media (max-width: 992px) {
   .activities-reports_box {
     background-color: #ffffff;
@@ -883,5 +888,33 @@ a::-moz-focus-inner {
   .gmaps {
     margin: 0;
     width: 38rem;
+  }
+}
+@media (max-width: 375px) {
+  .main-title {
+    font-size: 3.8rem;
+  }
+  .teachers-slider_img {
+    min-height: 200px;
+  }
+  .gmaps {
+    width: 35rem;
+  }
+}
+@media (max-width: 320px) {
+  .main-title {
+    font-size: 3rem;
+  }
+  .main-desc {
+    font-size: 1.5rem;
+  }
+  .main-table_box {
+    display: none;
+  }
+  .teachers-slider_img {
+    min-height: 200px;
+  }
+  .gmaps {
+    width: 29rem;
   }
 }

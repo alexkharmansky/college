@@ -773,6 +773,15 @@ a::-moz-focus-inner {
 		}
 	}
 }
+@media (max-width: 1024px) {
+	.teachers {
+		&-slider {
+			&_img {
+				min-height: 200px;
+			}
+		}
+	}
+}
 @media (max-width: 992px) {
 	.activities {
 		&-reports {
@@ -870,6 +879,9 @@ a::-moz-focus-inner {
 			}
 		}
 	}
+	.teachers {
+
+	}
 	.enrollee {
 		&-heading {
 			&_invalid {
@@ -898,5 +910,47 @@ a::-moz-focus-inner {
 	.gmaps {
 		margin: 0;
 		width: 38rem;
+	}
+}
+@media (max-width: 375px) {
+	.main {
+		&-title {
+			font-size: 3.8rem;
+		}
+	}
+	.teachers {
+		&-slider {
+			&_img {
+				min-height: 200px;
+			}
+		}
+	}
+	.gmaps {
+		width: 35rem;
+	}
+}
+@media (max-width: 320px) {
+	.main {
+		&-title {
+			font-size: 3rem;
+		}
+		&-desc {
+			font-size: 1.5rem;
+		}
+		&-table {
+			&_box {
+				display: none;
+			}
+		}
+	}
+	.teachers {
+		&-slider {
+			&_img {
+				min-height: 200px;
+			}
+		}
+	}
+	.gmaps {
+		width: 29rem;
 	}
 }
