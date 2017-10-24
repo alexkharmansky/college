@@ -188,14 +188,15 @@ body {
 	.shadow;
 	padding: 2rem 0px;
 	&-title {
-		margin-top: -1rem;
+		margin-top: -0.1rem;
 		text-align: center;
-		margin-bottom: 3rem;
+		margin-bottom: 2.8rem;
 		text-transform: uppercase;
 		color: @title-color;
 	}
 	&-structure {
 		margin-top: -1rem;
+		padding-bottom: 1.3rem;
 		.shadow;
 		background-color: @main-color;
 		color: @font-color;
@@ -208,7 +209,7 @@ body {
 		color: @title-color;
 		&_text {
 			font-weight: 700;
-			margin-bottom: 2rem;
+			margin-bottom: 2.4rem;
 		}
 		&_link {
 			.btn-mixin;
@@ -334,7 +335,6 @@ body {
 	}
 	&-slider {
 		margin: 20px auto;
-		padding-bottom: 20px;
 		&_img {
 			text-align: center;
 			width: 100%;
@@ -910,6 +910,15 @@ a::-moz-focus-inner {
 	.gmaps {
 		margin: 0;
 		width: 38rem;
+	}
+}
+@media (max-width: 425px) {
+	.student {
+		&-curator {
+			&_table {
+				margin-left: 2rem;
+			}
+		}
 	}
 }
 @media (max-width: 375px) {

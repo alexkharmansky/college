@@ -1903,7 +1903,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 main-table_box">
+				<div class="col-lg-12 main-table_box hidden-xs">  <!-- hidden-xs -->
 					<h2 class="enrollee-specialties_title">Перечень специальностей</h2>
 					<table style="border-color: #000000; width: 98%;" border="1" cellspacing="0" cellpadding="10">
 						<tbody>
@@ -2454,7 +2454,7 @@
 				<p class="footer-text">2015-2017 © Таврический колледж<br>
 				Крымского федерального университета имени В.И. Вернадского<br>
 				Республика Крым, г. Симферополь ул.Киевская, 116-А<br>
-				Телефон: 54-52-86</p>
+				Телефон: (3652) 54-52-86</p>
 			</div>
 		</div>
 	</footer>
@@ -2479,6 +2479,15 @@
 			},
 			{
 				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					prevArrow: '<button class="prev arrow"></button>',
+					nextArrow: '<button class="next arrow"></button>',
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 320,
 				settings: {
 					slidesToShow: 2,
 					prevArrow: '<button class="prev arrow"></button>',

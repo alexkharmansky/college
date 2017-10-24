@@ -166,14 +166,15 @@ body {
   padding: 2rem 0px;
 }
 .about-title {
-  margin-top: -1rem;
+  margin-top: -0.1rem;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 2.8rem;
   text-transform: uppercase;
   color: #111111;
 }
 .about-structure {
   margin-top: -1rem;
+  padding-bottom: 1.3rem;
   box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   background-color: #ffffff;
   color: #5e5e5e;
@@ -187,7 +188,7 @@ body {
 }
 .about-license_text {
   font-weight: 700;
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
 }
 .about-license_link {
   background-color: #fff;
@@ -348,7 +349,6 @@ body {
 }
 .teachers-slider {
   margin: 20px auto;
-  padding-bottom: 20px;
 }
 .teachers-slider_img {
   text-align: center;
@@ -888,6 +888,11 @@ a::-moz-focus-inner {
   .gmaps {
     margin: 0;
     width: 38rem;
+  }
+}
+@media (max-width: 425px) {
+  .student-curator_table {
+    margin-left: 2rem;
   }
 }
 @media (max-width: 375px) {
