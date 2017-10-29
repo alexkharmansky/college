@@ -188,15 +188,14 @@ body {
 	.shadow;
 	padding: 2rem 0px;
 	&-title {
-		margin-top: -0.1rem;
+		margin-top: -1rem;
 		text-align: center;
-		margin-bottom: 2.8rem;
+		margin-bottom: 3rem;
 		text-transform: uppercase;
 		color: @title-color;
 	}
 	&-structure {
 		margin-top: -1rem;
-		padding-bottom: 1.3rem;
 		.shadow;
 		background-color: @main-color;
 		color: @font-color;
@@ -209,7 +208,7 @@ body {
 		color: @title-color;
 		&_text {
 			font-weight: 700;
-			margin-bottom: 2.4rem;
+			margin-bottom: 2rem;
 		}
 		&_link {
 			.btn-mixin;
@@ -282,7 +281,7 @@ body {
 				transition: all 0.3s;
 				&:hover {
 					color: @hover-color;
-					text-decoration: underline;
+					text-decoration: none;
 				}
 			}
 		}
@@ -335,6 +334,7 @@ body {
 	}
 	&-slider {
 		margin: 20px auto;
+		padding-bottom: 20px;
 		&_img {
 			text-align: center;
 			width: 100%;
@@ -385,7 +385,7 @@ body {
 		transition: all 0.3s;
 		&:hover {
 			color: @hover-color;
-			text-decoration: underline;
+			text-decoration: none;
 		}
 	}
 	&-programs {
@@ -402,7 +402,7 @@ body {
 				color: @link-color;
 				&:hover {
 					color: @hover-color;
-					text-decoration: underline;
+					text-decoration: none;
 				}
 			}
 		}
@@ -417,7 +417,7 @@ body {
 				color: @link-color;
 				&:hover {
 					color: @hover-color;
-					text-decoration: underline;
+					text-decoration: none;
 				}
 			}
 		}
@@ -790,7 +790,7 @@ a::-moz-focus-inner {
 				box-shadow: none;
 			}
 		}
-		&-shedule {
+		&-schedule {
 			&_box {
 				background-color: @main-color;
 				box-shadow: none;
@@ -912,15 +912,6 @@ a::-moz-focus-inner {
 		width: 38rem;
 	}
 }
-@media (max-width: 425px) {
-	.student {
-		&-curator {
-			&_table {
-				margin-left: 2rem;
-			}
-		}
-	}
-}
 @media (max-width: 375px) {
 	.main {
 		&-title {
@@ -960,11 +951,6 @@ a::-moz-focus-inner {
 		}
 	}
 	.gmaps {
-		display: none;
-	}
-	.contacts {
-		&-text {
-			margin: 0;
-		}
+		width: 29rem;
 	}
 }

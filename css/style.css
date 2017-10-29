@@ -166,15 +166,14 @@ body {
   padding: 2rem 0px;
 }
 .about-title {
-  margin-top: -0.1rem;
+  margin-top: -1rem;
   text-align: center;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3rem;
   text-transform: uppercase;
   color: #111111;
 }
 .about-structure {
   margin-top: -1rem;
-  padding-bottom: 1.3rem;
   box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
   background-color: #ffffff;
   color: #5e5e5e;
@@ -188,7 +187,7 @@ body {
 }
 .about-license_text {
   font-weight: 700;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
 }
 .about-license_link {
   background-color: #fff;
@@ -299,7 +298,7 @@ body {
 .about-documents_list-1 a:hover,
 .about-documents_list-2 a:hover {
   color: #ff0000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .leadership {
   box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
@@ -349,6 +348,7 @@ body {
 }
 .teachers-slider {
   margin: 20px auto;
+  padding-bottom: 20px;
 }
 .teachers-slider_img {
   text-align: center;
@@ -397,7 +397,7 @@ body {
 }
 .activities-links:hover {
   color: #ff0000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .activities-programs {
   text-align: center;
@@ -416,7 +416,7 @@ body {
 }
 .activities-reports_box a:hover {
   color: #ff0000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .activities-standarts {
   text-align: center;
@@ -431,7 +431,7 @@ body {
 }
 .activities-standarts_box a:hover {
   color: #ff0000;
-  text-decoration: underline;
+  text-decoration: none;
 }
 .activities-scroll {
   text-align: center;
@@ -802,7 +802,7 @@ a::-moz-focus-inner {
     background-color: #ffffff;
     box-shadow: none;
   }
-  .activities-shedule_box {
+  .activities-schedule_box {
     background-color: #ffffff;
     box-shadow: none;
   }
@@ -890,11 +890,6 @@ a::-moz-focus-inner {
     width: 38rem;
   }
 }
-@media (max-width: 425px) {
-  .student-curator_table {
-    margin-left: 2rem;
-  }
-}
 @media (max-width: 375px) {
   .main-title {
     font-size: 3.8rem;
@@ -920,9 +915,6 @@ a::-moz-focus-inner {
     min-height: 200px;
   }
   .gmaps {
-    display: none;
-  }
-  .contacts-text {
-    margin: 0;
+    width: 29rem;
   }
 }
