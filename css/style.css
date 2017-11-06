@@ -353,7 +353,7 @@ body {
 .teachers-slider_img {
   text-align: center;
   width: 100%;
-  min-height: 305px;
+  min-height: 306px;
 }
 .teachers-slider_slide {
   margin-left: 15px;
@@ -728,10 +728,30 @@ footer {
   transform: scaleY(-50%);
 }
 .prev {
+  background: url(../img/arrow-left.png) no-repeat center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+  height: 30px;
+  background-size: cover;
+  margin-left: -2rem;
+  left: 0;
+  transition: all 0.3s;
+}
+.next {
+  background: url(../img/arrow-right.png) no-repeat center;
+  background-color: #ffffff;
+  box-shadow: 0 3px 5px 0 rgba(0, 1, 1, 0.1);
+  height: 30px;
+  background-size: cover;
+  margin-right: -2rem;
+  right: 0;
+  transition: all 0.3s;
+}
+.prev1 {
   background: url() no-repeat center;
   left: 0;
 }
-.next {
+.next1 {
   background: url() no-repeat center;
   right: 0;
 }
@@ -915,6 +935,9 @@ a::-moz-focus-inner {
     min-height: 200px;
   }
   .gmaps {
-    width: 29rem;
+    display: none;
+  }
+  .contacts-text {
+    margin: 0;
   }
 }
