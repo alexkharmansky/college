@@ -17,7 +17,7 @@
   </head>
   <body>
 
-  	<!-- Бургер-меню -->
+  	<!-- Выезжающее меню -->
     <a href="#menu" class="menu-link">
     	<span></span>
     </a>
@@ -654,7 +654,7 @@
 							</div>
 						</div>
 					<div class="teachers-slider_slide ">
-							<img src="img/teachers/belenkayaa.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.7s" data-wow-duration="0.6s">
+							<img src="img/teachers/belenkayaa1.jpg" alt="" class="teachers-slider_img fadeIn wow" data-wow-delay="0.7s" data-wow-duration="0.6s">
 							<div class="teachers-slider_text">
 								<b class="teachers-slider_title">Беленькая <br>Анна Сергеевна</b>
 								<p class="teachers-slider_desc">Основы философии</p>
@@ -1903,7 +1903,7 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-lg-12 main-table_box">
+				<div class="col-lg-12 main-table_box hidden-xs">
 					<h2 class="enrollee-specialties_title">Перечень специальностей</h2>
 					<table style="border-color: #000000; width: 98%;" border="1" cellspacing="0" cellpadding="10">
 						<tbody>
@@ -2440,7 +2440,7 @@
 			<div class="row">
 				<h1 class="contacts-title">Контакты</h1>
 				<div class="col-lg-6 col-md-7 col-sm-12 fadeIn wow">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.4398627671603!2d34.090875392496464!3d44.97537488858594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd89b3bd2b8b%3A0x637dc7e218971780!2zMTE2INGD0LsuINCa0LjQtdCy0YHQutCw0Y8sINCh0LjQvNGE0LXRgNC-0L_QvtC70Yw!5e0!3m2!1sru!2s!4v1508361424511" width="550" height="300" frameborder="0" style="border:0" allowfullscreen class="gmaps"></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.4398627671603!2d34.090875392496464!3d44.97537488858594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40eadd89b3bd2b8b%3A0x637dc7e218971780!2zMTE2INGD0LsuINCa0LjQtdCy0YHQutCw0Y8sINCh0LjQvNGE0LXRgNC-0L_QvtC70Yw!5e0!3m2!1sru!2s!4v1508361424511" width="550" height="300" frameborder="0" style="border:0" allowfullscreen class="gmaps hidden-xs"></iframe>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-12 fadeIn wow" data-wow-delay="0.2s">
 					<p class="contacts-text"><b>Таврический колледж</b> (структурное подразделение) федерального государственного автономного образовательного учреждения высшего образования «Крымский федеральный университет имени В.И. Вернадского».<br><br>
@@ -2464,6 +2464,8 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script>
 		$('.teachers-slider').slick({
+			prevArrow: '<button class="prev arrow"></button>',
+			nextArrow: '<button class="next arrow"></button>',
 			slidesToShow: 5,
 			infinity: true,
 			slidesToScroll: 5,
@@ -2471,18 +2473,27 @@
 			{
 				breakpoint: 992,
 				settings: {
+					prevArrow: '<button class="prev1 arrow"></button>',
+					nextArrow: '<button class="next1 arrow"></button>',
 					slidesToShow: 4,
-					prevArrow: '<button class="prev arrow"></button>',
-					nextArrow: '<button class="next arrow"></button>',
-					slidesToScroll: 2
+					slidesToScroll: 4
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
+					prevArrow: '<button class="prev1 arrow"></button>',
+					nextArrow: '<button class="next1 arrow"></button>',
 					slidesToShow: 2,
-					prevArrow: '<button class="prev arrow"></button>',
-					nextArrow: '<button class="next arrow"></button>',
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 320,
+				settings: {
+					prevArrow: '<button class="prev1 arrow"></button>',
+					nextArrow: '<button class="next1 arrow"></button>',
+					slidesToShow: 2,
 					slidesToScroll: 2
 				}
 			},
